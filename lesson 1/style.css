@@ -1,0 +1,24 @@
+body {
+	background-color: #eeeeee;
+}
+#content {
+	background: #ffffff;
+	width: 513px;
+	height: 752px;
+	margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 50px;
+}
+h2 {
+	text-align: center;
+	margin: auto;
+}
+img {
+	display: block;
+    margin: 20px auto;
+}
+p {
+	font-size: 13pt;
+	padding-left: 10px;
+}
