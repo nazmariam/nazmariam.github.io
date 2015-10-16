@@ -3,20 +3,18 @@ body {
 }
 #content {
 	background: #ffffff;
-	width: 513px;
-	height: 752px;
-	margin-left:auto;
-    margin-right:auto;
+	width: 463px;
+	min-height: 752px;
+	margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 50px;
+    padding: 30px 50px;
 }
 h2 {
 	text-align: center;
-	margin: auto;
 }
-img {
-	display: block;
-    margin: 20px auto;
+.fotoUser {
+    margin-top: 20px;
+    text-align: center;
 }
 p {
 	font-size: 13pt;
