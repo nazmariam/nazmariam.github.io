@@ -1,10 +1,11 @@
 body {
 	background-color: #eeeeee;
+	font-size: 18px;
+
 }
 #content {
 	background: #ffffff;
 	width: 463px;
-	min-height: 752px;
 	margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 30px 50px;
@@ -13,10 +14,9 @@ h2 {
 	text-align: center;
 }
 .fotoUser {
-    margin-top: 20px;
     text-align: center;
 }
 p {
-	font-size: 13pt;
+	
 	padding-left: 10px;
 }
