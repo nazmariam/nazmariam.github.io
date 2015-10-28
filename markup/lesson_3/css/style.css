@@ -13,13 +13,13 @@ a:visited {
 	color: #2c2c2c;
 }
 
-#container {
+.container {
 	width: 966px; 
 	margin: 0 auto;
 	padding: 47px;
 	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	clear: both;
+	/* clear: both; */
 }
 
 .logo {
@@ -156,5 +156,10 @@ footer a {
     line-height: 41px;
     text-align: right;
     padding: 0 25px 0 0;
-    float: inherit;
+    float: right;
+}
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: block;
 }
