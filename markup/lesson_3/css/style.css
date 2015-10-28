@@ -101,6 +101,9 @@ a:visited {
 	width: 678px;
 	float: right;
 }
+.clear {
+	clear: both;
+}
 
 .byce {
 	text-align: center;
@@ -118,7 +121,7 @@ footer {
 }
 
 footer a {
-		color: black;
+	color: black;
 }
 
 .fmenu {
@@ -153,4 +156,5 @@ footer a {
     line-height: 41px;
     text-align: right;
     padding: 0 25px 0 0;
+    float: inherit;
 }
