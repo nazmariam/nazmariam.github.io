@@ -1,6 +1,6 @@
 body {
 	background: #f9f9f9;
-	font: 13.33px "open sans" sans-serif; ;
+	font: 14px "open sans" sans-serif; ;
 }
 
 a {
@@ -13,11 +13,12 @@ a:visited {
 }
 
 #container {
-	width: 1060px;
+	width: 966px; 
 	margin: 0 auto;
-	padding: 45px;
+	padding: 47px;
 	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	clear: both;
 }
 
 .logo {
@@ -29,32 +30,24 @@ a:visited {
 	background: linear-gradient(to top, #464545, #5d5d5d);
 	}
 
-.hmenu {
-	width: 80%;
-	height: 41px;
-}
-
 .hmenu ul {
 	font-size: 0;
 	line-height: 0;
 }
 
 .hmenu li{
-	font-size: 14.67px; 
-	line-height: normal;
+	font-size: 15px; 
 	display: inline-block;
 	color: #f9f9f9;
 	text-shadow: 1px 1px 2px black, 0 0 1em #303030;
 	text-align: center;
-	width: 17%;
-	height: 100%;
+	width: 140px;
 }
 
 .hmenu a {
 	color: #ffffff;
 	display: block;
-	height: 41px;
-	line-height: 37px;
+	line-height: 41px;
 }
 
 .hmenu a:visited {
@@ -65,43 +58,47 @@ a:visited {
 	background: linear-gradient(to top, #2f2f2f, #4a4a4a);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
+	width: 138px;
 }
 
 .content {
-	padding: 40px 0;
-	width: 1060px;
+	margin: 40px 0;
 }
 
 .sidebar {
 	float: left;
-	width: 20%;
-	display: inline-block;
+	width: 240px;
 }
 
 .sidebar ul {
 	font-size: 0;
 	line-height: 0;
+	border: 1px solid #c8c8c8;
 }
 
 .sidebar li{
-	font-size: 13.33px; 
-	line-height: normal;
-	border: 1px solid #c8c8c8;
-	margin-bottom: -1px;
-	height: 20px;
-	padding: 10px;
+	border-bottom: 1px solid #c8c8c8;
+	padding: 0 0 0 24px;
 }
 
+.sidebar li a {
+	display: block;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.sidebar li:last-child {
+	border-bottom: none;
+}
 .sidebar li:hover{
-	padding-left: 20px;
+	padding: 0 0 0 35px;
 	background: #f9f9f9;
 	color: black;
 }
 
 .page {
-	display: inline-block;
-	width: 75%;
-	float:right;
+	width: 678px;
+	float: right;
 }
 
 .byce {
@@ -115,13 +112,12 @@ a:visited {
 }
 
 footer {
-	background: #e1e1e1;								
+	background: #e1e1e1;
 }
 
 .fmenu {
-	width: 80%;
-	height: 41px;
-	display: inline-block;
+	float: left;
+	background: #e1e1e1;
 }
 
 .fmenu ul {
@@ -130,19 +126,16 @@ footer {
 }
 
 .fmenu li{
-	font-size: 14.67px; 
-	line-height: normal;
+	font-size: 15px;
 	display: inline-block;
 	color: #2c2c2c;
 	text-align: center;
-	width: 17%;
-	height: 100%;
+	width: 140px;
 }
 
 .fmenu a {
 	display: block;
-	height: 41px;
-	line-height: 37px;
+	line-height: 41px;
 }
 
 .fmenu li:hover {
@@ -150,8 +143,8 @@ footer {
 }
 
 .copyright {
-	float: right;
-	width: 20%;
-	display: inline-block;
-    line-height: 37px;
+	background: #e1e1e1;
+    line-height: 41px;
+    text-align: right;
+    padding: 0 25px 0 0;
 }
