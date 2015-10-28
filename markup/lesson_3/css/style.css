@@ -115,6 +115,10 @@ footer {
 	background: #e1e1e1;
 }
 
+footer a {
+		color: black;
+}
+
 .fmenu {
 	float: left;
 	background: #e1e1e1;
