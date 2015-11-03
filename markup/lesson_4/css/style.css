@@ -52,6 +52,7 @@ p {
 .ball a {
 	line-height: 14px;
 	color: #5fa5bb;	
+	font-size: 12px;
 }
 
 .ball a:visited {
@@ -94,7 +95,6 @@ p {
 .nav ul li{
 	float:none;
 	margin-left:0;
-	width: 100%;
 	padding: 0 5px; 
 }
 .nav ul a{
@@ -108,6 +108,8 @@ p {
 	left:0; /* Приносим его обратно на экран, когда нужно */
 	opacity:1; /* Делаем непрозрачным */
 	border-top: 1px solid black;
+	width: 100%;
+	top: 40px;
 }
 
 .nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
