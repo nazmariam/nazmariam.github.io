@@ -73,13 +73,12 @@ p {
 }
 .nav li{
 	float:left;
-	padding: 5px 30px;
 	position:relative;
 	line-height: 20px;
 }
 .nav li a{
 	display:block;
-	padding:5px;
+	padding:5px 30px;
 	color:#fff;
 	background:#333;
 	text-decoration:none;
@@ -109,7 +108,8 @@ p {
 	opacity:1; /* Делаем непрозрачным */
 	border-top: 1px solid black;
 	width: 100%;
-	top: 40px;
+	top: 30px;
+	padding:0px;
 }
 
 .nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
