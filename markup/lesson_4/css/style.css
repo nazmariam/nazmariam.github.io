@@ -47,7 +47,7 @@ p {
 .ball {
     display: inline-block;
     text-align: center;
-    width: 50px;
+    width: 62px;
 }
 .ball a {
 	line-height: 14px;
