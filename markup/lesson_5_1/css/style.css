@@ -64,6 +64,9 @@ body {
 .rmenu li{
 	float: left;
 	line-height: 36px;
+	color: #fff;
+/* 	display: block; */
+	padding: 0 10px 0;
 }
 
 .rmenu a {
@@ -104,5 +107,5 @@ body {
 	height: 600px;
 	width: 550px;
 	background: url(../img/black-back.png) no-repeat 50% 50%;
-    margin: 3px auto; /*не знаю как его выровнять по вертикали*/
+    position: absolute; top0; left: 0; right: 0; bottom: 0; margin: auto;
 }
