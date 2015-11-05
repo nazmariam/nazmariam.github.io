@@ -10,6 +10,11 @@
 
 }
 
+@media only screen and (max-width: 1367px) {
+
+} 
+}
+
 body {
 	background: url(../img/background.png) no-repeat center top fixed;
 	background-size: cover;
@@ -64,8 +69,6 @@ body {
 .rmenu li{
 	float: left;
 	line-height: 36px;
-	color: #fff;
-/* 	display: block; */
 	padding: 0 10px 0;
 }
 
@@ -75,11 +78,11 @@ body {
 	padding: 0 5px 0;
 }
 
-.under span {
+.under a {
 	text-decoration: underline;
 }
 
-.under:hover span {
+.under a:hover {
 	text-decoration: none;
 }
 
@@ -177,5 +180,5 @@ input:focus {
     border-radius: 4px;
     border: 1px solid #6bb9e7;
     margin: 10px 0 10px -10px;
-
+    cursor: pointer;
 }
