@@ -1,0 +1,44 @@
+body {
+	background: grey;
+}
+
+td {
+	width: 50px;
+	border: 7px solid #000;
+}
+
+table {
+	margin: 5% auto;
+}
+
+.row1 {
+	height: 50px;
+}
+
+.row2 {
+	height: 130px;
+}
+
+.row3 {
+	height: 125px;
+}
+
+.row4  {
+	height: 55px;
+}
+
+.row5  {
+	height: 60px;
+}
+
+.row6, .row7  {
+	height: 30px;
+}
+
+.medcol {
+	width: 120px;
+}
+
+.bigcol {
+	width: 75px;
+}
