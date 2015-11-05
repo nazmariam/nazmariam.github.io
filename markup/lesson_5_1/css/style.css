@@ -1,3 +1,6 @@
+/* @media only screen and (max-width: 1000px) {
+  сюда можно вписать альтернативную форму
+} */
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('../fonts/helveticaneuecyr-light-webfont.eot');
@@ -7,10 +10,6 @@
          url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
-}
-
-@media only screen and (max-width: 1000px) {
 
 }
 
@@ -112,9 +111,11 @@ body {
 	height: 600px;
 	width: 550px;
 	background: url(../img/black-back.png) no-repeat 50% 50%;
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;
-    z-index: -1;
+	background-size: cover;
+/*  position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;
+z-index: -1; */
 	color: #ccc;
+	margin: 50px auto;
 }
 
 h2 {
