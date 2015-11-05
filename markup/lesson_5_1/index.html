@@ -15,7 +15,7 @@
 						<ul>	
 							<li><img src="img/flag.png" alt=""></li>
 							<li>Minhas Ofertas</li>
-							<li class="under"><a href="#"><span>Entrar</span> ou <span>Cadastre-se</span></a></li>
+							<li class="under">Ola!<a href="#"><span>Entrar</span> ou <span>Cadastre-se</span></a></li>
 						</ul>
 					</div>
 				<div class="menu">
@@ -31,7 +31,46 @@
 		</div>
 	</header>
 	<div class="content">
-		Cadastre-se
+		<h2>Cadastre-se</h2>
+		<a href="#"><img src="img/fb.png" alt="Log in with Facebook"></a>
+		<img src="img/ou.png" alt="ou">
+		<!-- <form action="#" method="post">
+			<input type="text" name="firstname">
+			<input type="text" name="lastname">
+			
+		</form> -->
+		<div class="inner">
+			
+		<form id="app-login" action="process.php">
+			<fieldset>
+			<div>
+			  <input name="first-name" type="text" placeholder="First Name" required autofocus>
+			</div>
+			<div>
+			  <input name="last-name" type="text" placeholder="Last Name" required>
+			</div>	
+			<div>
+			  <input name="e-mail" type="email" placeholder="E-mail Address" required>
+			</div>
+			<div>
+			  <input name="pass" type="password" placeholder="Choose Password" required>
+			</div>
+			<div>
+			  <input name="pass" type="password" placeholder="Password Confirm" required>
+			</div>	
+			<div class="check">
+			  <input name="send" type="checkbox"><span>Send me Youbike updates and tips</span>
+			</div>
+			<div class="submit">
+			  <input name="create" type="submit" value="Create my Account">
+			</div>
+			<p>
+				By clicking the button above, you agree to the Terms of Service
+Xiew our Privacy Policy.
+			</p>
+			</fieldset>
+		</form>
+		</div>
 	</div>
 </body>
 </html>
