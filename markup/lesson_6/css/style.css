@@ -22,12 +22,11 @@ body {
 
 .row {
 	background: #074c89;
-		background-image: url(../img/noise2.png);
 	}
 
 .width {
 	width: 900px;
-	height: 37px;
+	height: 38px;
 	margin: 0 auto;
 }
 
