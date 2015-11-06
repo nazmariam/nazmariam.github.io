@@ -1,6 +1,6 @@
-/* @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   input {font-size: 50%};
-}  */
+}  
 
 @font-face {
     font-family: 'Helvetica Neue';
@@ -23,7 +23,7 @@ body {
 
 .row {
 	background: #074c89;
-		background-image: url(../img/noise2.png);
+	background-image: url(../img/noise2.png);
 	}
 
 .width {
@@ -159,9 +159,13 @@ input:focus {
 	-moz-box-shadow: 0px 0px 16px 5px rgba(127,154,180,0.6);
 	box-shadow: 0px 0px 16px 5px rgba(127,154,180,0.6);
 }
+.check input:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
 
 .check input {
-	width: 16px;
+	width: 13px;
 }
 
 .inner p {
