@@ -1,5 +1,6 @@
 @media only screen and (max-width: 1000px) {
-  input {font-size: 50%};
+  input {font-size: 0.7em;};
+  div.content {display:none;};
 }  
 
 @font-face {
@@ -98,7 +99,6 @@ body {
     display: block;
 }
 
-
 .rmenu a:visited {
 	color: #fff;
 }
@@ -109,15 +109,13 @@ body {
 	display: block;
 }
 
+.top-row {
+	border-bottom: 1px solid #bec7b4;
+}
 .content {
-	height: 80%;
-	width: 30%;
-	min-height: 510px;
-	min-width: 295px;
-	background: url(../img/black-back.png) no-repeat 50% 50%;
-	background-size: cover;
-/*  position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;
-z-index: -1; */
+	height: 612px;
+	width: 555px;
+	background: rgba(0,0,0,0.63);
 	color: #ccc;
 	margin: 50px auto;
 }
@@ -134,10 +132,6 @@ h2 {
 	margin: 38px auto;
 }
 
-.content img {
-	display: block;
-	margin: 34px auto;
-}
 .inner {
 	width: 275px;
 	margin: 0 auto;
@@ -189,4 +183,85 @@ input:focus {
     border: 1px solid #6bb9e7;
     margin: 10px 0 10px -10px;
     cursor: pointer;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.fancy span {
+  display: inline-block;
+  position: relative; 
+  color: #999; 
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  border-bottom: .5px solid #000;
+  border-top: 1px solid #666;
+  top: 0;
+  width: 121px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 5px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 5px;
+}
+
+.fb {
+	width: 275px;
+	background: linear-gradient(to top, #2e4476,#3b5798);
+	margin: 35px auto;
+	border-top: 1px solid #7889b5;
+	border-radius: 3px;
+	position: relative;
+}
+.fb:before {
+    position: absolute;
+    height: 35px;
+    top: 10px;
+    left: 38px;
+    margin-top: -10px;
+    content: "";
+    border-left: 1px solid #213c71;
+    border-right: 1px solid #4d66a6;
+}
+.fb a {
+	display: block;
+	padding-left: 70px;
+	line-height: 34px;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.7);
+	font-family: Arial;
+}
+
+.fb span {
+	font-weight: bold;
+}
+
+.fb a:before {
+    background-image: url(../img/fb.png)
+    position: absolute;
+    height: 21px;
+    width: 9px;
+    top: 50%;
+    left: 15px;
+    margin-top: -10px;
+    content: "";
+}
+.fb a:after {
+    background-image: url(../img/fb-arrow.png);
+    position: absolute;
+    height: 20px;
+    width: 9px;
+    top: 50%;
+    right: 27px;
+    margin-top: -10px;
+    content: "";
 }
