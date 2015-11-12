@@ -44,18 +44,15 @@ body {
     background-image: url(../img/icons.png);
     position: absolute;
     height: 21px;
-    width: 9px;
+    width: 22px;
     top: 50%;
     left: 7px;
     margin-top: -10px;
     content: "";
-    }
-}
-.phone img {
-	float: left;
+
 }
 .login {
-	width: 495px;
+	width: 483px;
     height: 27px;
     float: left;
     margin: 6px 0px 0 20px;
@@ -64,10 +61,8 @@ body {
 	-webkit-box-shadow: 7px 8px 10px -2px rgba(193,193,193,0.78);
 	-moz-box-shadow: 7px 8px 10px -2px rgba(193,193,193,0.78);
 	box-shadow: 7px 8px 10px -2px rgba(193,193,193,0.78);
-}
-.login img{
-	float: left;
-    margin: 5px 0 0 4px;
+    position: relative;
+    padding-left: 18px;
 }
 form {
 	width: 281px;
@@ -96,11 +91,32 @@ form {
     margin: 0 3px 0 0;
 }
 .login a.forget {
-	color: #8c98a2;
-    text-decoration: underline;
+    color: #fff;
     font-size: 12px;
     padding: 0 5px 0 11px;
     line-height: 28px;
+}
+a.forget:hover {
+    color: #8c98a2;
+    text-decoration: underline;
+}
+a.reg {
+    color: #fff;
+    font-size: 11px;
+
+}
+a.reg:hover {
+    color: #8c98a2;
+    text-decoration: underline;
+}
+.app-login:before {
+    position: absolute;
+    background: url(../img/login.png) no-repeat;
+    content: "";
+    width: 14px;
+    height: 18px;
+    top: 5px;
+    left: 6px;
 }
 .enter {
 	float: left;
@@ -121,11 +137,37 @@ form {
     float: right;
     margin: 8px 9px 0 0;
     padding: 1px;
+    position: relative;
 
 }
-.icons img {
-    padding: 1px 3px 2px 2px;
-    margin-bottom: -2px;
+.icons a {
+    display: inline-block;
+    margin: 0 5px 0 3px;
+    width: 10px;
+    height: 10px;
+}
+.home:before{
+    position: absolute;
+    background: url(../img/map.png);
+    content: '';
+    width: 12px;
+    height: 11px;
+}
+.map:before{
+    position: absolute;
+    background: url(../img/map.png);
+    content: '';
+    width: 13px;
+    height: 10px;
+    background-position: -13px;
+}
+.mail:before{
+    position: absolute;
+    background: url(../img/map.png);
+    content: '';
+    width: 12px;
+    height: 10px;
+    background-position: 12px;
 }
 .nav_row {
 	background: linear-gradient(to top, #010101, #505860);
@@ -140,20 +182,27 @@ form {
 	float: right;
     padding: 7px 9px;
     margin-left: 45px;
+    position: relative;
 }
 .cart span {
 	color: #929b9f;
     font-size: 11px;
     padding: 4px;
 }
+.cart span:before {
+    position: absolute;
+    background: url(../img/cart.png) no-repeat;
+    content: "";
+    width: 22px;
+    height: 18px;
+    top: 9px;
+    left: -13px;
+
+}
 span>.price {
 	color: #0d5a8f;
 	font-family: Arial;
 	font-size: 12px;
-}
-.cart img {
-    float: left;
-    margin: 0px 3px 2px 0;
 }
 .menu {
     float: right;
@@ -191,6 +240,7 @@ span>.price {
 	font-family: Arial;
 	font-size: 10px;
 }
+
 .search1 {
 	float: left;
 	width: 412px;
@@ -270,6 +320,8 @@ option {
   	font-size: 14px;
   	font-style: italic;
   	border: none;
+    margin: -8px 5px;
+    cursor: pointer;
   } 
 .search2 {
 	float: left;
@@ -380,14 +432,11 @@ h2 {
 	-moz-box-shadow: 6px 6px 14px -8px rgba(74,74,74,1);
 	box-shadow: 6px 6px 14px -8px rgba(74,74,74,1);
 	margin-bottom: 13px;
-}
-h2 img {
-	float: left;
-	padding: 1px;
+    position: relative;
 }
 h2 span {
 	line-height: 25px;
-	margin: 2px;
+    margin: 2px 0 0 25px
 }
 h3 {
 	width: 146px;
@@ -396,14 +445,30 @@ h3 {
 	border-radius: 10px;
 	color: #114165;
 	font-size: 13px;
+    position: relative;
 }
-h3 img {
-	float: left;
-	padding: 1px;
+h3 span:before {
+    position: absolute;
+    background: url(../img/ring.png) no-repeat;
+    content: "";
+    width: 21px;
+    height: 23px;
+    left: 1px;
+    top: 1px;
+
 }
 h3 span {
 	line-height: 25px;
-	margin: 2px;
+	margin: 2px 0 0 25px;
+}
+h2 span:before {
+    position: absolute;
+    background: url(../img/catalog.png) no-repeat;
+    content: "";
+    width: 23px;
+    height: 21px;
+    left: 1px;
+    top: 1px;
 }
 .column1 ul>li>ul>li {
     list-style: circle inside;
@@ -447,6 +512,9 @@ h3 span {
 	margin: 0 auto;
     padding: 3px 20px 15px 12px
 }
+.column2 a {
+    display: block;
+}
 .column2 figure {
     float: left;
     padding: 4px 16px;
@@ -460,6 +528,7 @@ figure h4 {
 }
 figure span {
 	font-size: 13px;
+    color: #000;
 }
 figure p {
 	background: #fff;
@@ -478,13 +547,15 @@ figcaption {
     font-style: italic;
 
 }
-.brandmenu img {
-    margin: 17px;
-    margin: 28px 17px;
+.brandmenu {
+    margin: 20px 0;
 }
-/* .fmenu a:hover{
-	zoom: 130%;
-} */
+.brandmenu a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 17px;
+}
+
 .fmenu {
 	width: 330px;
     margin: 5px auto;
