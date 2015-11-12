@@ -32,26 +32,21 @@ body {
     height: 27px;
     width: auto;
     padding: 12px 0 0 7px;
+    position: relative;
 }
 .phone span {
-	font-size: 18px;
+    font-size: 18px;
     font-family: Arial;
-	margin: 5px 0 0 5px;
-	text-align: center;
+    margin: 5px 0px 0 29px;
+    text-align: center;
 }
 .phone span:before {
-/*     content: "";
-background: url(../img/icons.png);
-display: inline-block;
-vertical-align: middle;
-font-size: 70px;
-font-style: normal; */
     background-image: url(../img/icons.png);
     position: absolute;
     height: 21px;
     width: 9px;
     top: 50%;
-    left: 15px;
+    left: 7px;
     margin-top: -10px;
     content: "";
     }
