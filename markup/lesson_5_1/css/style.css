@@ -168,11 +168,6 @@ input:focus {
 	line-height: 15px;
 }
 
-.submit {
-	width: 150px;
-    margin: 0 auto;
-}
-
 .submit input {
 	width: 150px;
     background: linear-gradient(to top, #2e7ac4, #50afdc);
@@ -181,7 +176,7 @@ input:focus {
     color: #fff;
     border-radius: 4px;
     border: 1px solid #6bb9e7;
-    margin: 10px 0 10px -10px;
+    margin: 10px 0 10px 60px;
     cursor: pointer;
 }
 .fancy {
