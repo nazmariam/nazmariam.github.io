@@ -117,6 +117,10 @@ header {
 }
 .item__a:hover {
     text-shadow: 0 0 1em #fff;
+     -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+     -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .item__a:visited {
     color: #fff;
