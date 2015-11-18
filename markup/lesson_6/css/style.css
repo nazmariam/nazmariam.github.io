@@ -416,7 +416,7 @@ option {
 } 
 .column1{
 	float: left;
-    width: 184px;
+    width: 179px;
     padding: 3px 2px 22px 3px;
 }
 .column3{
@@ -517,7 +517,7 @@ h2 span:before {
     background: -o-linear-gradient(#e5e7e8, #93a7b0);
     background: linear-gradient(#e5e7e8, #93a7b0); /* для webkit-браузеров / / для firefox 3.6+ */ 
     background: -o-linear-gradient(top,  #e5e7e8,  #93a7b0); /* для Opera 11.10+ / / для IE10+, т.к. лично я пока не проверял нужен ли префикс / / W3C */
-    width: 513px;
+    width: 493px;
     margin: 0 auto;
     padding: 3px 20px 15px 12px
    } 
@@ -526,7 +526,7 @@ h2 span:before {
 }
 .column2 figure {
     float: left;
-    padding: 4px 16px;
+    padding: 4px 12px;
     text-align: center;
     margin-bottom: 10px
 }
