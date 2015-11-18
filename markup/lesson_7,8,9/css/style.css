@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+
+    font: 24px "League Gothic";
+}
+.wrapper1{
+    width: 965px;
+    margin: 0 auto;
+}
+header {
+    background: url(../img/bg_header.png) no-repeat center top;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    height: 845px;
+}
+.row {
+    padding: 60px 0;
+}
+
+.logo {
+    float: left;
+    color: #fff;
+    font-size: 48px;
+}
+.colored {
+    background: linear-gradient(to top, #140F17, #7B4D8E);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+.hmenu {
+    float: left;
+    margin: 11px 0 0 122px;
+}
+.menu__item {
+    float: left;
+}
+.menu__link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 42px;
+    padding: 0 5px;
+}
+.menu__link:hover {
+    border-bottom: 2px solid #edbfff;
+}
+.wrapper2 {
+    background: rgba(1,1,1,.2);
+}
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: block;
+}
