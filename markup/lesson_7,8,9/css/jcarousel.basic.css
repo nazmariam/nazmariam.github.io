@@ -1,8 +1,7 @@
 .jcarousel-wrapper {
     margin: 82px auto;
     position: relative;
-    width: 960px;
-    height: 400px;
+    width: 927px;
 }
 
 
@@ -14,6 +13,7 @@
     color: #fff;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
     opacity: .66;
+    width: 95%;
 }
 
 .jcarousel-wrapper .photo-credits a {
@@ -48,7 +48,7 @@
 }
 
 .jcarousel-control-prev {
-    left: -50px;
+    left: -30px;
 }
 .jcarousel-control-prev:before{
     position: absolute;
@@ -116,4 +116,17 @@
     -moz-box-shadow: 0 0 2px #F0EFE7;
     box-shadow: 0 0 2px #42414b;
     border: 1px solid #42414b;
+}
+@media (max-width: 720px) {
+
+    .jcarousel-wrapper {
+        width: 90%;
+    }
+    .jcarousel-control-next {
+    right: 1px;
+}
+@media (max-width: 744px) { 
+    .jcarousel-pagination {
+    bottom: -51px;
+    left: 50%;
 }
