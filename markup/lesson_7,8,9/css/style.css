@@ -12,9 +12,7 @@ body {
 
     font: 24px "League Gothic";
 }
-/* .header {
-    position: relative;
-} */
+
 .wrapper1{
     position: relative;
     width: 70%;
@@ -61,6 +59,41 @@ header {
 .wrapper2 {
     background: rgba(1,1,1,.2);
     min-height: 400px;
+}
+.slider1{
+/*    max-width: 960px;
+    max-height: 400px;*/
+    position: relative;
+}
+.text {
+    margin-top: 70px;
+    float: left;
+    /*width: 40%;*/
+}
+.slider1__h2 {
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-size: 60px;
+    text-transform: none;
+}
+.slider1__h3 {
+    color: #cdaadd;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    font-size: 32px;
+}
+.slider1__p {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    text-shadow: 1px 1px 2px black;
+    max-width: 500px;
+    text-transform: none;
+}
+.slider1__img {
+    float: right;
+    /*width: 33%;*/
+    
 }
 /* .bg {
     height: 400px;
@@ -309,7 +342,7 @@ footer {
     text-align: right;
     font-family: "Open Sans";
     font-size: 12px;
-    width: 130px; 
+    width: 135px; 
     float: right;
 }
 .fmenu {
@@ -330,7 +363,7 @@ footer {
         width: 80%;
     }
 }
-@media (max-width: 720px) {
+@media (max-width: 480px) {
     .column1, .column2, .column3 {
         width: 100%;
         margin: 2% 0 0 0;
@@ -354,7 +387,7 @@ footer {
         margin: 3% 5%;
     }
 }
-@media (max-width: 744px) {
+@media (max-width: 480px) {
     header {
         height: 624px;
     }
