@@ -618,6 +618,11 @@ footer {
         border-bottom: none;
     }
 }
+@media (max-width: 400px) {
+    .slider1__img{
+        display: none;
+    }
+}
 @media (max-width: 320px) {
     .slider1__img{
         display: none;
