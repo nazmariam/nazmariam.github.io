@@ -34,6 +34,11 @@ header {
     font-size: 48px;
 }
 .colored {
+/*    background: -moz-linear-gradient(to top, #140F17, #7B4D8E);
+    background: -webkit-gradient(to top, #140F17, #7B4D8E);
+    background: -webkit-linear-gradient(to top, #140F17, #7B4D8E);
+    background: -o-linear-gradient(to top, #140F17, #7B4D8E);
+    background: -ms-linear-gradient(to top, #140F17, #7B4D8E);*/
     background: linear-gradient(to top, #140F17, #7B4D8E);
     -webkit-background-clip: text;
     color: transparent;
@@ -318,11 +323,11 @@ header {
 }
 .grey {
     float: none;
-    color: #454545;
+    color: #b9b9b9;
     text-transform: uppercase;
 }
-.grey .colored {
-    color: #b9b9b9;
+.dark{
+    color: #454545;
 }
 .pre-footer__copy {
     font-family: Georgia, serif;
@@ -371,7 +376,7 @@ footer {
     }
     .wrapper1 {
         padding-left: 20px;
-        width: 98%;
+        width: 97%;
     }
     .wrapper2 {
         padding-left: 20px;
@@ -457,9 +462,37 @@ footer {
         padding: 37px 0 0;
     }
 }
+@media (max-width: 600px) {
+    .pre-footer {
+        padding: 58px 0px;
+    }
+    .grey, .pre-footer__h3 {
+        font-size: 25px;
+    }
+    .pre-footer__copy {
+        display: none;
+    }
+    .pre-footer__p {
+        width: 395px;
+    }
+    .pre-footer .column1,.pre-footer .column2,.pre-footer .column3 {
+        width: 95%;
+        margin: 20px 10px 9px 10px;
+    }
+    .fmenu .menu__link {
+        padding: 2px 0px 3px 18px;
+        margin: 0;
+    }    
+    .fmenu .menu__item {
+        display: block;
+    }
+    .fmenu .menu__item .menu__link:hover {
+        border-bottom: none;
+    }
+}
 @media (max-width: 480px) {
     .column1, .column2, .column3 {
-        width: 100%;
+        width: 95%;
         margin: 20px 10px 9px 10px;
     }
     .copyright {
@@ -476,14 +509,13 @@ footer {
         height: 550px;
     }
     .wrapper1 {
-        width: 100%;
+        width: 93.93%;
     }
     .wrapper2 {
         margin-top: -203px;
         height: 250px;
         min-height: 220px;
     }
-
     .menu__item {
         display: none;
         position: relative;
@@ -506,7 +538,7 @@ footer {
         width: 158px; 
         padding: 60px 0 206px 0;    
     }
-   .hmenu:hover .menu__item  {
+    .hmenu:hover .menu__item  {
         display: block;
         float: none;
         margin: 0 0 0 -35px;
@@ -628,7 +660,7 @@ footer {
         display: none;
     }
     .wrapper1 {
-        width: 94%;
+        width: 93%;
     }
     .wrapper2 {
         background: none;
