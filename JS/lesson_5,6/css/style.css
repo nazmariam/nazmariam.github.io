@@ -1,12 +1,12 @@
 body {
-	background: url(../img/bg2.jpg) no-repeat center top 25% fixed black;
+	background: url(../img/bg2.jpg) no-repeat center top 60px fixed black;
 	color: #d3b26d;
 	font-size: 60px;
 }
 
 .wrapper {
 	width: 355px;
-	margin: 3% auto;
+	margin: 65px auto;
 }
 
 button {
