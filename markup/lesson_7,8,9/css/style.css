@@ -109,10 +109,10 @@ header {
     background: rgba(1,1,1,.2);
 } */
 .about_panel {
-    padding: 72px 0 0 62px;
+    padding: 72px 0 50px 62px;
     position: relative;
     background: linear-gradient(to top, #322539, #745083);
-    min-height: 340px;
+    /*min-height: 340px;*/
     border-top: 1px solid #33253a;
     border-bottom: 1px solid #0d151b;
     -webkit-box-shadow: 0px 4px 3px 2px rgba(0,0,0,0.5);
@@ -501,12 +501,14 @@ footer {
         float: none;
         margin: 0 auto;
         width: 138px;
+        padding: 0 0 57px 0;
+        line-height: 74px;
     }
     .brandmenu {
-        padding: 8px 53px;
+        padding: 8px 0;
     }
     .brandmenu__a {
-        margin: 30px 10px 6px 6px;
+        margin: 30px 3px 6px 6px;
     }
     header {
         height: 550px;
@@ -648,7 +650,7 @@ footer {
         margin-left: -20px;
     }
     .fmenu .menu__link {
-        padding: 2px 0px 3px 10px;
+        padding: 15px 0px 3px 10px;
     }    
     .fmenu .menu__item {
         display: block;
