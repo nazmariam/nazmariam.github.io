@@ -647,10 +647,10 @@ footer {
         width: 330px;
     }
     .fmenu {
-        margin-left: -20px;
+        margin-left: 25px;
     }
     .fmenu .menu__link {
-        padding: 15px 0px 3px 10px;
+        padding: 15px 3px 3px 10px;
     }    
     .fmenu .menu__item {
         display: block;
