@@ -1,0 +1,32 @@
+.wrapper {
+	font-family: sans-serif;
+	width: 500px;
+	margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 5px 10px 5px;
+}
+ul {
+	margin: 5px 0;
+	background-color: #ccc;
+	border-radius: 5px;
+}
+li {
+	display: inline-block;
+    margin: 7px 7px 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #e8e8e8;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.active {
+    background-color: #fff;
+}
+.tabs__content {
+  	display: none;
+  	line-height: 22px;
+  	padding: 5px;
+}
+.tabs__content.active {
+  display: block;
+}

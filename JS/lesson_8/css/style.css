@@ -1,0 +1,24 @@
+.wrapper {
+	font-family: sans-serif;
+	width: 550px;
+	margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 5px 10px 5px;
+}
+.firstname, .lastname, .adress {
+  margin: 15px;
+}
+.help {
+  margin: 10px;
+  cursor: pointer;
+}
+.descript {
+  width: 100px;
+  float: left;
+}
+em {
+  font-size: 14px;
+  margin: 0 0 0 5px;
+  color: #bbb;
+}
