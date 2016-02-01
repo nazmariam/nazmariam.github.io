@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tamplate maker</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.carousel.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+		 <script type="text/html" id="CV">
+			 <div id="wrapper">
+				<h2><%= name %></h2>
+				<div class="fotoUser"><img src=<%= img %>></div>
+				<p><%= speciality %></p>
+				<div class="border">
+					<p>Хочу учить фронтенд потому, что:</p> 
+					<ul>
+							<li><%= firstLine %></li>
+							<li><%= secondLine %></li>
+							<li><%= thirdLine %></li>
+					</ul>
+				</div>
+				<div class="border">
+					<p>Мой контактный телефон<br/><%= phoneNumber %></p>
+					<p>Мой профиль вконтакте<br/><a href=<%= vk %>>vk.com</a></p>
+				</div>
+				<div class="border"><p>Мой фидбек:<br/><%= feedback %></p></div>
+			</div>
+	 </script>
+	<div class="carousel-cover">
+		<div class="carousel-hider">
+			<ul class="carousel-list">
+				<li class="carousel-element"><img src="http://lorempixel.com/300/200/cats/1/"></li>
+				<li class="carousel-element"><img src="http://lorempixel.com/300/200/cats/2/"></li>
+				<li class="carousel-element"><img src="http://lorempixel.com/300/200/cats/3/"></li>
+				<li class="carousel-element"><img src="http://lorempixel.com/300/200/cats/4/"></li>		
+				<li class="carousel-element"><img src="http://lorempixel.com/300/200/cats/1/"></li>
+				<li class="carousel-element"><img src="http://lorempixel.com/300/200/cats/2/"></li>
+				<li class="carousel-element"><img src="http://lorempixel.com/300/200/cats/3/"></li>
+				<li class="carousel-element"><img src="http://lorempixel.com/300/200/cats/4/"></li>
+			</ul>
+		</div>
+		<div class="carousel-arrow-left">
+			<img src="img/previous.png" alt="<">
+			<!-- <span> < </span> -->
+		</div>
+	<div class="carousel-arrow-right">
+		<img src="img/next.png" alt=">">
+		<!-- <span> > </span> -->
+	</div>
+</div>
+</body>
+</html>
