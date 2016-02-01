@@ -10,13 +10,11 @@
 $(function(){
 
   var showDropdown = function () {
-    $(this).children('.submenu')
-      .show(300);
+    $(this).children('.submenu').show(300);
   };
 
   var hideDropdown = function () {
-    $(this).children('.submenu')
-      .hide(300);
+    $(this).children('.submenu').hide(100);
   };
 
   $('li.sub').hover( showDropdown, hideDropdown );
