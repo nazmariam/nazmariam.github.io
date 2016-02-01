@@ -20,7 +20,16 @@
 	 <script src="js/script.js"></script>
 <body>
 	<ul class="menu">
-		<li class="li__menu">
+		<li class="li__menu sub">
+			<a href="">menu</a>
+			<ul class="submenu">
+				<li><a href="">submenu</a></li>
+				<li><a href="">submenu</a></li>
+				<li><a href="">submenu</a></li>
+				<li><a href="">submenu</a></li>
+			</ul>
+		</li>
+		<li class="li__menu sub">
 			<a href="">menu</a>
 			<ul class="submenu">
 				<li><a href="">submenu</a></li>
@@ -31,32 +40,11 @@
 		</li>
 		<li class="li__menu">
 			<a href="">menu</a>
-			<ul class="submenu">
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-			</ul>
 		</li>
 		<li class="li__menu">
 			<a href="">menu</a>
-			<ul class="submenu">
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-			</ul>
 		</li>
-		<li class="li__menu">
-			<a href="">menu</a>
-			<ul class="submenu">
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-				<li><a href="">submenu</a></li>
-			</ul>
-		</li>
-		<li class="li__menu">
+		<li class="li__menu sub">
 			<a href="">menu</a>
 			<ul class="submenu">
 				<li><a href="">submenu</a></li>
@@ -97,21 +85,35 @@
 		<option value="значение option 6">текст option 6</option>
 	</select>
 </div>
-    <h2>Checkboxes</h2>
+<div class="checkboxes clearfix">
     <div class="jquery_checkbox">
         <p>jQuery checkbox</p>
         <label><input type="checkbox">Погладь 1го кота</label>
         <label><input type="checkbox">Погладь 2го кота</label>
         <label><input type="checkbox" disabled>Кота 3 нельзя гладить</label>
         <label><input type="checkbox">Погладь 4го кота</label>
-        <button>Кот поглажен</button>
+        <input class="button" type="submit"  value="Кот поглажен">
     </div>
+    <div class="css_radio">
+        <p>CSS radio</p>
+        <input type="radio" id="radio1" class="radio" name="radio">
+        <label for="radio1">Погладь 1го кота</label>
+        <input type="radio" id="radio2" class="radio" name="radio">
+        <label for="radio2">Погладь 2го кота</label>
+        <input type="radio" id="radio3" class="radio" name="radio">
+        <label for="radio3">Погладь 3го кота</label>
+        <input type="radio" disabled id="radio4" class="radio" name="radio">
+        <label for="radio4" >4 кот нелюбит чтоб его гладили</label>
+
+        <input class="button" type="submit" value="Кот поглажен">
+    </div>
+</div>
 
 <script>
 	(function($) {
 $(function() {
 
-  $('input, select').styler();
+  $('.jquery_checkbox input, select').styler();
 
 });
 })(jQuery);
