@@ -19,4 +19,4 @@ $(function(){
 
   $('li.sub').hover( showDropdown, hideDropdown );
 
-  });
+ });
