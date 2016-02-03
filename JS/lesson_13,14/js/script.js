@@ -8,14 +8,12 @@ $(function () {
     {
       questionNumb: "1",
       question: "Who is John Galt?",
-      answer  : [
+      answer: [
       "engineer",
       "writer",
       "nobody knows"
       ],
-      correct: {
-        1:true
-      }
+      correct: 1
     },
     {
       questionNumb: "2",
@@ -25,11 +23,8 @@ $(function () {
       "headwear",
       "linux distribution"
       ],
-      correct: {
-        1:true,
-        2:true,
-        3:true
-      }
+      correct: 2
+
     },
     {
       questionNumb: "3",
@@ -39,9 +34,7 @@ $(function () {
       "oh... women",
       "I don't know, she wouldn't say"
       ],
-      correct: {
-        3:true
-      },
+      correct: 3
 
     }
   ];
@@ -63,30 +56,40 @@ $(function () {
   });
   $('.questions').append(content);
   // console.log(content);
-  console.log(questions[0].answer.length);
+  // console.log(questions[0].answer);
+  // console.log(questions[1].answer);
+  // console.log(questions[2].answer);
 
 // checking right answers
 
 function checkAnswer(e) {
   e.preventDefault();
-
+  var choice;
+  var input =[];
+  var chosenAns = [];
   var user = [];   
   for (var i=0;  i < questions.length; i++) {
-
-    var chosenAns = [];
-    var input = $('.box' + (i+1) +' input');
-   // console.log(input[i]);
+   $('.box'+(i+1)+' .checkbox label input[type=checkbox]').each(function(){
+                    if($(this).prop('checked')){
+                    choice = $(this).val();
+                    choice = choice*1;
+                    }
+                });
+  
     for (var j=0; j < questions[i].answer.length; j++) {
-      var right = questions[i].correct[j+1];
-      var choice = input.checked;
+      var right = questions[i].correct-1;
       if (choice == right) {
         chosenAns[j]=true;
       } else {
         chosenAns[j]=false;
         };
     };
+                                                    console.log("i=", i);
+                                                    console.log('choice', choice);
+                                                    console.log("right", right);
     user.push(chosenAns);
   };
+
 
       function modalWindow () {
         var $modal = $('<div class="modalWindow"><h2 class="title">Test results</h2></div>');
