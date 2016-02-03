@@ -23,7 +23,7 @@ $(function () {
       "headwear",
       "linux distribution"
       ],
-      correct: 2
+      correct: [1, 2, 3]
 
     },
     {
