@@ -55,104 +55,53 @@ $(function () {
     test: questions
   });
   $('.questions').append(content);
-  // console.log(content);
-  // console.log(questions[0].answer);
-  // console.log(questions[1].answer);
-  // console.log(questions[2].answer);
 
-// checking right answers
+// checking right answers + form drawing
 
 function checkAnswer(e) {
   e.preventDefault();
   var choice;
   var input =[];
-  var chosenAns = [];
-  var user = [];   
-  for (var i=0;  i < questions.length; i++) {
-   $('.box'+(i+1)+' .checkbox label input[type=checkbox]').each(function(){
-                    if($(this).prop('checked')){
-                    choice = $(this).val();
-                    choice = choice*1;
-                    }
-                });
-  
-    for (var j=0; j < questions[i].answer.length; j++) {
-      var right = questions[i].correct-1;
-      if (choice == right) {
-        chosenAns[j]=true;
-      } else {
-        chosenAns[j]=false;
-        };
-    };
-                                                    console.log("i=", i);
-                                                    console.log('choice', choice);
-                                                    console.log("right", right);
-    user.push(chosenAns);
-  };
+  var result = [];   
+  function modalWindow () {
+    var $modal = $('<div class="modalWindow"><h2 class="title">Test results</h2></div>');
+    var $overlay = $('<div class="modalWindow-overlay"></div>');
+    var $testResults;
+    $('body').append($modal);
+    $('body').append($overlay);    
 
-
-      function modalWindow () {
-        var $modal = $('<div class="modalWindow"><h2 class="title">Test results</h2></div>');
-        var $overlay = $('<div class="modalWindow-overlay"></div>');
-        
-        $('body').append($modal);
-        $('body').append($overlay);
-        
-        var htmlQuestion = $('#testing').html();
-      
-      var content = tmpl(htmlQuestion, {
-        test: questions
-      });
-      
-            
-      $('.modalWindow').append(content);
-      var $buttonOk = $('<button>OK</button>');      
-      $('.modalWindow').append($buttonOk);
-
-        for (var i = 0; i < questions.length; i++) {
-          var inputs = $('.box' + (i+1) +' input:checkbox');
-          var inputsShowResult =  $('.modalWindow .box' + (i+1) +' input:checkbox');
-          
-          for (var k = 0; k < questions[i].answer.length; k++) {
-            
-            var checked = inputs[k].checked;
-          
-          if ((checked == true)) {
-            if ((user[i][k]) == true) {
-              $(inputsShowResult[k]).attr({
-                "disabled":true,
-                "checked" : true  
-                }).parent().append("<span> Правильный ответ!</span>").find("span").css({"color" : "green"});
-          } else {
-            $(inputsShowResult[k]).attr({
-                "disabled":true,
-                "checked" : true  
-                }).parent().append("<span> Неправильный ответ!</span>").find("span").css({"color" : "red"});  
-
-          }; 
-
-          } else {
-            $(inputsShowResult[k]).attr({
-                "disabled":true,
-                "checked" : false 
-          });
+    $overlay.one('click', hideModal);
+    
+    for (var i=0;  i < questions.length; i++) {
+     $('.box'+(i+1)+' .checkbox label input[type=checkbox]').each(function(){
+                      if($(this).prop('checked')){
+                      choice = $(this).val();
+                      choice = choice*1;
+                      }
+                  });
+    
+      for (var j=0; j < questions[i].answer.length; j++) {
+        var right = questions[i].correct-1;
+        if (choice == right) {
+          result[j]=true;
+        } else {
+          result[j]=false;
           };
-
-        };
-        };
-
-        $buttonOk.one('click', hideModal);
-
-        function hideModal() {
-      $modal.removeClass('bounceInDown').addClass('hinge');
-      setTimeout(function(){$modal.remove();}, 10);
-      $overlay.remove();
-    };
-
+      };
+      $testResults = $('<h4>'+(i+1)+' question: answer is ' +(result[i]? 'right':'wrong')+'</h4>');
+      $('.modalWindow').append($testResults);
+    }
+      var $butClose = $('<button class="close">Close</button>');      
+      $('.modalWindow').append($butClose);
+      $butClose.one('click', hideModal);
+      
+      function hideModal() {
+        $modal.remove();
+        $overlay.remove();
       };
 
-      modalWindow();
-
+  };
+  modalWindow();
 };
 
 

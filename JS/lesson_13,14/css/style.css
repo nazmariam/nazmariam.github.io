@@ -41,16 +41,23 @@ body {
 	margin: 10px auto;
 }
 
+h4 {
+	margin: 15px 0px;
+}
+
+.close {
+	margin-left: 100px;
+}
 .modalWindow {
-	position: absolute;
-	width: 600px;
-	top:10%;
-	left:50%;
-	margin-left: -250px;
-	z-index: 999;
-	background: white;
-	padding: 20px;
-	border-radius: 5px;
+    position: absolute;
+    width: 250px;
+    top: 19%;
+    left: 65%;
+    margin-left: -250px;
+    z-index: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
     box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
 }
 
