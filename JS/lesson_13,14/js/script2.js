@@ -74,7 +74,8 @@ function checkAnswer(e) {
   for (var i=0;  i < questions.length; i++) {
 
     var chosenAns = [];
-    var input = $('.box' + (i+1) +' input');
+    var input = [];
+    // $('.box' + (i+1) +' input');
    // console.log(input[i]);
     for (var j=0; j < questions[i].answer.length; j++) {
       var right = questions[i].correct[j+1];
