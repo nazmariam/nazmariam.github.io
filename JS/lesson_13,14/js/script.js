@@ -19,12 +19,11 @@ $(function () {
       questionNumb: "2",
       question: "What the 'Red Hat' is?",
       answer: [
-      "fairy tale",
-      "headwear",
-      "linux distribution"
+      "linux distribution",
+      "FBI agent",
+      "fashion victim"
       ],
-      correct: [1, 2, 3]
-
+      correct: 1
     },
     {
       questionNumb: "3",
@@ -56,7 +55,7 @@ $(function () {
   });
   $('.questions').append(content);
 
-// checking right answers + form drawing
+// checking right answers + modal window drawing
 
 function checkAnswer(e) {
   e.preventDefault();
@@ -69,14 +68,13 @@ function checkAnswer(e) {
     var $testResults;
     $('body').append($modal);
     $('body').append($overlay);    
-
     $overlay.one('click', hideModal);
     
     for (var i=0;  i < questions.length; i++) {
      $('.box'+(i+1)+' .checkbox label input[type=checkbox]').each(function(){
                       if($(this).prop('checked')){
                       choice = $(this).val();
-                      choice = choice*1;
+                      // choice = choice*1;
                       }
                   });
     
@@ -88,7 +86,7 @@ function checkAnswer(e) {
           result[j]=false;
           };
       };
-      $testResults = $('<h4>'+(i+1)+' question: answer is ' +(result[i]? 'right':'wrong')+'</h4>');
+      $testResults = $('<h4>Question '+(i+1)+': answer is <span class="result">' +(result[i]? 'right':'wrong')+'</span></h4>');
       $('.modalWindow').append($testResults);
     }
       var $butClose = $('<button class="close">Close</button>');      

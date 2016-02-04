@@ -41,6 +41,10 @@ body {
 	margin: 10px auto;
 }
 
+.result {
+	font-weight: bold;
+}
+
 h4 {
 	margin: 15px 0px;
 }
