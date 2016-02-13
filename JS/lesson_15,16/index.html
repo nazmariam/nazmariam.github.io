@@ -2,15 +2,21 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Hello World - Google  Web Search API Sample</title>
-    <script src="https://www.google.com/jsapi"
-        type="text/javascript"></script>
+    <meta charset="utf-8">
+    <title>Google  Web Search API Sample</title>
+    <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
-  <input type="text" name="q" id="q"/>
-  <input type="submit" name="search" class="button" id="search" value="Search"/>
+  <center>
+    <form id="f" name="f">
+        <img alt="День святого Валентина" border="0" height="149" src="https://www.google.com.ua/logos/doodles/2016/valentines-day-2016-5699846440747008-5096695956242432-ror.gif" style="padding-top:52px" title="День святого Валентина" width="525" onload="window.lol&amp;&amp;lol()">
+          <input type="text" name="q" id="q"/>
+          <input type="submit" name="search" class="button" id="search" value="Поиск в Google"/>
+    </form>
+    </center>
+    <div class="result"></div>
   </body>
 </html>
