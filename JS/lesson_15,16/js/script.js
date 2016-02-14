@@ -9,7 +9,7 @@
             var ul = document.createElement("ul");
             $.each(data.results, function(i, val){
                     var li = document.createElement("li");
-                    li.innerHTML = ('<h3><a href="' + val.url + '">' + val.title + '</a></h3><p class="siteURL">' + val.siteUrl + '</p><p class="content">' + val.content + '</p>');                            
+                    li.innerHTML = ('<h3><a href="' + val.url + '">' + val.title + '</a></h3><p class="siteURL">' + val.visibleUrl + '</p><p class="content">' + val.content + '</p>');                            
                     ul.appendChild(li);
             });
             $('.result').html(ul);
