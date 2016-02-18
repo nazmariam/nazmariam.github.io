@@ -16,13 +16,12 @@ module.exports = function(grunt) {
               },
             },
           },
-        uglify: {
-          my_target: {
-            files: {
-               'js/script.main.min.js': ['js/script.main.js']
-            }
-          }
-        },
+  uglify: {
+    dist:{
+      src: ['js/script.main.js'],
+      dest: 'js/script.main.min.js'
+    }
+  },
             cssmin: {
               options: {
                 shorthandCompacting: false,
