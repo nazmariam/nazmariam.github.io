@@ -1,0 +1,28 @@
+body{
+	background: url("../img/pampik_pattern_pampers_left.png") no-repeat left top,  url("../img/pampik_pattern_pampers_right.png") no-repeat right top;
+	background-attachment: fixed
+}
+.active>span, .row-menu.row-cat, .row-menu  {
+	color: #00b0af;
+}
+.positions-item .row-item .row-item-toptab {
+	background: #cedfe0;
+}
+.row-item-content .row-item-price span {
+	color: #009999;
+	font-weight: 800;
+	font-style: sans-serif;
+}
+.row-item-content .row-item-price b {
+	font-weight: 800;
+}
+.positions-item .row-item .row-item-content .button-buy, .acc-slide .acc-slide-inner .button-buy, .button-buy-form {
+	background: #009999;
+}
+.positions-item .row-item .row-item-content .button-buy:hover, .button-buy-form .minus-product-bt:hover, .button-buy-form .plus-product-bt:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8fc716), color-stop(1, #74a705));
+    background-image: -o-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
+    background-image: linear-gradient(to bottom, rgb(3, 190, 190) 0%, #009999 100%)
