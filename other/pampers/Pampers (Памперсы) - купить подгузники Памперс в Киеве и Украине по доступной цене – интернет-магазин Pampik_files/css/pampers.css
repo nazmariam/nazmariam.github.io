@@ -1,3 +1,4 @@
+/*s:Main page*/
 body{
 	background: url("../img/pampik_pattern_pampers_left.png") no-repeat left top,  url("../img/pampik_pattern_pampers_right.png") no-repeat right top;
 	background-attachment: fixed
@@ -25,4 +26,71 @@ body{
     background-image: -moz-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
     background-image: -webkit-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
     background-image: -ms-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
-    background-image: linear-gradient(to bottom, rgb(3, 190, 190) 0%, #009999 100%)
+    background-image: linear-gradient(to bottom, rgb(3, 190, 190) 0%, #009999 100%);
+}
+.input-tab-search {
+	color: #009999;
+	font-weight: 700;
+}
+/*e:Main page*/
+/*s:Banner*/
+section {
+    padding: 1px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel_wrapper {
+	margin: 10px auto 40px auto;
+    position: relative;
+    width: 990px;
+    height: 337px;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+.jcarousel_pagination {
+    bottom: -35px;
+    position: absolute;
+    right: 10px;
+}
+
+.jcarousel_page {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    background: #8ed5d5;
+    border: 2px #009999 solid;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    transition: all 0.2s linear;
+}
+
+.jcarousel_page:hover {
+    background: #009999;
+}
+
+.active {
+    background: white;
+}
+
+/*e:Banner*/
