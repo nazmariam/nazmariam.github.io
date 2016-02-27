@@ -1,9 +1,13 @@
 /*s:Main page*/
+
 body{
 	background: url("../img/pampik_pattern_pampers_left.png") no-repeat left top,  url("../img/pampik_pattern_pampers_right.png") no-repeat right top;
 	background-attachment: fixed
 }
-.active>span, .row-menu.row-cat, .row-menu  {
+.active>span, .row-menu.row-cat {
+	color: #00b0af;
+}
+.row-menu b{
 	color: #00b0af;
 }
 .positions-item .row-item .row-item-toptab {
@@ -11,12 +15,12 @@ body{
 }
 .row-item-content .row-item-price span {
 	color: #009999;
-	font-weight: 800;
+	font-weight: 600;
 	font-style: sans-serif;
 }
-.row-item-content .row-item-price b {
+/*.row-item-content .row-item-price b {
 	font-weight: 800;
-}
+}*/
 .positions-item .row-item .row-item-content .button-buy, .acc-slide .acc-slide-inner .button-buy, .button-buy-form {
 	background: #009999;
 }
@@ -32,65 +36,97 @@ body{
 	color: #009999;
 	font-weight: 700;
 }
+
 /*e:Main page*/
+
 /*s:Banner*/
-section {
-    padding: 1px;
+
+.bx-wrapper {
+	position: relative;
+	/*margin: 15px auto;*/
+	right: 20px;
 }
 
-.carousel {
-    position: relative;
-    overflow: hidden;
-}
-.jcarousel_wrapper {
-	margin: 10px auto 40px auto;
-    position: relative;
-    width: 990px;
-    height: 337px;
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
 }
 
-.jcarousel {
-    position: relative;
-    overflow: hidden;
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
 }
 
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.bx-wrapper .bx-pager {
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    right: 5px;
+    bottom: 10px;
+    z-index: 110000;
 }
 
-.jcarousel li {
-    float: left;
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
 }
 
-.jcarousel_pagination {
-    bottom: -35px;
-    position: absolute;
-    right: 10px;
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #fff;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
-.jcarousel_page {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    background: #8ed5d5;
-    border: 2px #009999 solid;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    transition: all 0.2s linear;
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #8ed5d5;
 }
 
-.jcarousel_page:hover {
-    background: #009999;
+.bx-controls-direction {
+	display: none;
 }
 
-.active {
-    background: white;
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
 }
 
 /*e:Banner*/
+/*s: ProductPage*/
+.item-container .row-describe-main .desc-cont .row-left .price-tab .row-item-price span {
+	color: #009999;
+}
+.desc-cont .row-menu b {
+	color: #fe7201;
+}
+.item-container .row-describe-main .desc-cont .row-left .price-tab .row-item-price .button-buy:hover {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(3, 190, 190)), color-stop(1, #009999));
+    background-image: -o-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(3, 190, 190) 0%, #009999 100%);
+    background-image: linear-gradient(to bottom, rgb(3, 190, 190) 0%, #009999 100%);
+}
+.item-container .row-describe-main .desc-cont .row-left .price-tab .row-item-price .button-buy {
+	background: #009999;
+    border-radius: 24px;
+}
+body .panel {
+	color: red !important;
+}
+/*e: ProductPage*/
