@@ -147,7 +147,7 @@ body{
 	background-attachment: fixed
 	}
 }
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
 	body{
 	background: url("../img/pampik_pattern_pampers_left_clear.png") no-repeat left top, #009999 url("../img/pampik_pattern_pampers_right_clear.png") no-repeat right top;
 	background-attachment: fixed
