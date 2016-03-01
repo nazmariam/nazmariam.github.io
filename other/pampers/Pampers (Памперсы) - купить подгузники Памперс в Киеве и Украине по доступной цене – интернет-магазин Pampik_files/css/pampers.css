@@ -18,9 +18,7 @@ body{
 	font-weight: 600;
 	font-style: sans-serif;
 }
-/*.row-item-content .row-item-price b {
-	font-weight: 800;
-}*/
+
 .positions-item .row-item .row-item-content .button-buy, .acc-slide .acc-slide-inner .button-buy, .button-buy-form {
 	background: #009999;
 }
@@ -133,7 +131,6 @@ body{
 }
 .item-container .row-describe-main .desc-cont .row-left .price-tab .row-item-price .button-buy {
 	background: #009999;
-    border-radius: 24px;
 }
 .item-container .row-describe-main .desc-cont .row-left .price-tab .row-item-price .button-buy:active {
     background: #009999;
