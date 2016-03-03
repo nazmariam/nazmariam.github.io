@@ -10,6 +10,9 @@ body{
 .row-menu b{
 	color: #00b0af;
 }
+.row-cat-select .form-group:hover span,.row-cat-select .form-group:hover a {
+	color: #00b0af !important;	
+}
 .positions-item .row-item .row-item-toptab {
 	background: #cedfe0;
 }
@@ -57,7 +60,7 @@ body{
 
 .bx-wrapper {
 	position: relative;
-	/*margin: 15px auto;*/
+    margin: 0 0 30px 0;
 	right: 20px;
 }
 
