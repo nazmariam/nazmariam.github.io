@@ -1,28 +1,4 @@
-$width:       1160px;
-$main_color:  #2a2d32;
-$center:      0 auto;
-$white:       #ffffff;
-$orange:	  #f4b60d;
-$hovercolor:  #248cec;
-$gray:		  #ccc;
-$dark:        #5d6063;
-$ubuntu:      Ubuntu, Arial, sans-serif;
-
-
-//mixins
-
-@mixin fa ($value, $color) {
-	    content: $value;
-	    font-family: FontAwesome;
-	    font-style: normal;
-	    font-weight: normal;
-	    text-decoration: none;
-	/*--adjust as necessary--*/
-	    color: $color;
-	    font-size: 18px;
-	    padding-right: 0.5em;
-	    position: absolute;
-}
+@import 'variables';
 
 *{
 	margin: 0;
