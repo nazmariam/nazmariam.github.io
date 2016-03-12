@@ -336,7 +336,11 @@ header {
           .content .content__news-container .content__news .content__latest-news .content__latest-news__box .content__latest-news--title {
             font-size: 16px;
             font-weight: bold;
-            margin-bottom: 10px; }
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #2a2d32; }
+          .content .content__news-container .content__news .content__latest-news .content__latest-news__box .content__latest-news--title:hover {
+            color: #248cec; }
           .content .content__news-container .content__news .content__latest-news .content__latest-news__box .content__latest-news--by {
             float: left;
             font-size: 13px;
