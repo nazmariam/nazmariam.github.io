@@ -1,4 +1,4 @@
-var pow = require('../js/pow.js');
+var pow = require('../js/dist/pow.js');
 
 describe("pow", function() {
 
