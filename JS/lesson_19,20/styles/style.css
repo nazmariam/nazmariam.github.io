@@ -380,23 +380,23 @@ header {
           border: 1px solid #e8e8e8;
           color: #000;
           line-height: 29px;
-          cursor: pointer; }
+          cursor: pointer;
+          padding-left: 33px;
+          position: relative; }
         .content .content__news-container .content__news .content__banners .accordion-item.open {
           background: orange;
           border-bottom: 0px;
           color: #fff; }
-        .content .content__news-container .content__news .content__banners .accordion-item.open .type {
-          float: left;
-          background: url("../img/minus.png") center no-repeat;
-          padding: 23px 24px 8px 7px;
-          border-right: 1px solid #fff;
-          margin-right: 11px; }
-        .content .content__news-container .content__news .content__banners .accordion-item .type {
-          float: left;
+        .content .content__news-container .content__news .content__banners .accordion-item.open:before {
+          position: absolute;
+          background: url("../img/minus.png") center no-repeat; }
+        .content .content__news-container .content__news .content__banners .accordion-item::before {
+          position: absolute;
           background: url("../img/plus.png") center no-repeat;
-          padding: 23px 24px 8px 7px;
-          border-right: 2px solid #e8e8e8;
-          margin-right: 10px; }
+          width: 10px;
+          height: 31px;
+          left: 1px;
+          padding-right: 15px; }
         .content .content__news-container .content__news .content__banners div.data {
           margin: 0 10px 0 10px;
           padding: 10px;
@@ -404,6 +404,15 @@ header {
           line-height: 140%;
           display: none;
           color: #5d6063; }
+      .content .content__news-container .content__news .accordion-item:before {
+        position: absolute;
+        background: url("../img/plus.png") center no-repeat;
+        content: '';
+        width: 10px;
+        height: 31px;
+        left: 1px;
+        padding-right: 15px;
+        border-right: 1px solid #e8e8e8; }
 
 .footter__logo {
   padding: 85px 0 95px 0;

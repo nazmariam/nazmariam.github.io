@@ -469,6 +469,9 @@ header {
 					color: #000;
 					line-height: 29px;
 					cursor:pointer;
+					padding-left: 33px;
+					position: relative;
+
 					}
 
 				.accordion-item.open {
@@ -476,21 +479,24 @@ header {
 					border-bottom:0px;
 					color:#fff;
 					}
-				.accordion-item.open .type {
-					float: left;
+				.accordion-item.open:before {
+					position: absolute;
+					// float: left;
 					background: url('../img/minus.png') center no-repeat;
-					padding: 23px 24px 8px 7px;
-					border-right: 1px solid #fff;
-				    margin-right: 11px;
+					// padding: 23px 24px 8px 7px;
+					// border-right: 1px solid #fff;
+				    // margin-right: 11px;
 				}
 
-				.accordion-item .type {
-					float: left;
-					background: url('../img/plus.png') center no-repeat;
-					padding: 23px 24px 8px 7px;
-					border-right: 2px solid #e8e8e8;
-					margin-right: 10px;
-					}
+				.accordion-item::before {
+				    position: absolute;
+				    background: url("../img/plus.png") center no-repeat;
+				    width: 10px;
+				    height: 31px;
+				    left: 1px;
+				    padding-right: 15px;
+				}
+
 
 				div.data {
 					margin: 0 10px 0 10px;
@@ -501,6 +507,17 @@ header {
 					color: $dark;
 					}
 			}
+
+				.accordion-item:before {
+				    position: absolute;
+				    background: url("../img/plus.png") center no-repeat;
+				    content: '';
+				    width: 10px;
+				    height: 31px;
+				    left: 1px;
+				    padding-right: 15px;
+				    border-right: 1px solid #e8e8e8;
+				}
 		}
 	}
 }
