@@ -57,7 +57,7 @@ header {
 
 
 	a {
-		display: block;
+		display: inline-block;
 		height: 16px;
 		width: 16px;
 		float: left;
@@ -143,6 +143,7 @@ header {
 		padding-left: 5px;
 		position: relative;
 		color: $gray;
+		outline: none
 	}
 			.search:before {
 				@include fa ("\f002",$gray);
@@ -180,6 +181,7 @@ header {
 
 	li {
 		float: left;
+		position: relative;
 	}
 }
 
@@ -225,6 +227,7 @@ header {
 	left: 70px;
 	width: 290px;
 	color: $white;
+	z-index: 100000;
 
 
 	p {

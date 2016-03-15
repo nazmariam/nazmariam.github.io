@@ -40,7 +40,7 @@ header {
   width: 212px;
   margin-top: 8px; }
   .header__contacts a {
-    display: block;
+    display: inline-block;
     height: 16px;
     width: 16px;
     float: left;
@@ -144,7 +144,8 @@ header {
     font-size: 20px;
     padding-left: 5px;
     position: relative;
-    color: #ccc; }
+    color: #ccc;
+    outline: none; }
   .header__navigation .search:before {
     content: "";
     font-family: FontAwesome;
@@ -179,7 +180,8 @@ header {
     margin: 0;
     padding: 0; }
   .jcarousel li {
-    float: left; }
+    float: left;
+    position: relative; }
 
 .jcarousel_pagination {
   padding: 20px 0; }
@@ -216,7 +218,8 @@ header {
   top: 240px;
   left: 70px;
   width: 290px;
-  color: #ffffff; }
+  color: #ffffff;
+  z-index: 100000; }
   .header__carousel__text p {
     background: rgba(42, 45, 50, 0.9);
     padding: 0 15px; }

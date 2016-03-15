@@ -40,7 +40,7 @@ $('.content__services').mouseout(function(){
 
   // var allAccordions = $('.accordion div.data');
   // var allAccordionItems = $('.accordion .accordion-item');
-  // $('.accordion > .accordion-item').click(function() {
+  // $('.accordion__block > .accordion-item').click(function() {
   //   if($(this).hasClass('open'))
   //   {
   //     $(this).removeClass('open');
@@ -62,7 +62,8 @@ $(function() {
    $('div.data').slideUp(300);
     $('.accordion .accordion-item').removeClass('open');
   }
-  $(this).next().toggle(300);
+  $('.accordion .accordion-item').removeClass('open');
+  $(this).next().slideToggle(300);
   $(this).addClass('open');
  });
 })
