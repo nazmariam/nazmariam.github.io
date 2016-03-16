@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: url('../fonts/Tahoma-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RedRing-Regular';
+    src: url('../fonts/RedRing-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Red Ring Bold';
+    src: url('../fonts/Red Ring Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Red Ring Medium';
+    src: url('../fonts/Red Ring Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RedRing-Light';
+    src: url('../fonts/RedRing-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedRing-Black';
+    src: url('../fonts/RedRing-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}      
+         
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+.main_page{
+	/*height: 100%;*/
+	font-size: 18px;
+	font-family: 'Tahoma';
+	color: #fff;
+	background: #000 url(../img/main_bg.png) no-repeat right bottom;
+}
+.wrapper{
+	width: 940px;
+	margin: 0 auto;
+	/*min-height: 100%;*/
+	padding: 5px;
+}
+.header_nav {
+	padding: 10px 0;
+	border-bottom: 2px solid #fff;
+}
+.logo{
+	float: left;
+	
+}
+.menu {
+	float: right;
+	margin: 26px 80px 0 0;
+
+}
+.menu li {
+	list-style: none;
+	float: left;
+}
+.menu a{
+	font-family: 'RedRing-Regular';
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	width: 100px;
+}
+
+/*s:carousel*/
+.slider {
+    background: #f58220;
+    padding: 10px 0;
+}
+.header__carousel {
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden; 
+}
+
+.jcarousel_wrapper {
+  position: relative; 
+}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden; 
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+.jcarousel li {
+    float: left;
+    position: relative; 
+}
+
+.jcarousel_pagination {
+	padding: 20px 0; 
+}
+
+.jcarousel_page {
+	display: inline-block;
+	margin: 0 10px;
+	width: 12px;
+	height: 12px;
+	background: #ffffff;
+	border: 4px #ffffff solid;
+	transition: all 0.2s linear; 
+}
+
+.jcarousel_page:hover {
+	background: #2a2d32; 
+}
+
+.active {
+	background: #2a2d32; 
+}
+
+.jcarousel img {
+	height: 470px; 
+}
+
+.jcarousel_pagination {
+	position: absolute;
+	top: 420px;
+	left: 395px;
+}
+.jcarousel-prev:before, .jcarousel-next:before{
+	content: '';
+	width: 10px;
+	height: 20px;
+	position: absolute;
+	padding: 10px 15px;
+}
+.jcarousel-prev:before {
+	background: #f58220 url(../img/prev.png) no-repeat center;
+	top: 240px;
+    left: 0;	
+}
+
+.jcarousel-next:before {
+	background: #f58220 url(../img/next.png) no-repeat center;
+	top: 245px;
+    right: 0;	
+}
+
+/*f:carousel*/
+content p{
+	margin-top: 15px;
+}
+content ul {
+	margin-bottom: 20px;
+}
+content li{
+	text-indent: 5px;
+	list-style-image: url(../img/drop.png);
+	list-style-position: inside;
+}
+.marked {
+	font-family: 'RedRing-Light';
+	color: #f58220;
+}
+.marked a{
+	text-decoration: none;
+}
+.bld {
+	font-weight: bold;
+}
+footer {
+	height: 61px;
+	background: #f58220;
+	margin-top: -61px;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+}
+footer .wrapper {
+	padding: 20px 0;
+}
+.h__footer {
+	height: 81px;
+}
+.footer_nav {
+	/*height: 61px;*/
+}
+.dev {
+	margin: 0 260px;
+	width: 200px;
+}
+.dev a{
+	color: #fff;
+}
+.dev a:visited {
+	color: #fff;
+}
+.mail {
+	float: right;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+}
+.mail:before {
+	content: '';
+	background: url(../img/mail.png) no-repeat;
+	width: 20px;
+	height: 15px;
+	position: absolute;
+	left: -20px;
+    top: 3px;
+}
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: block;    
+}
