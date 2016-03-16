@@ -49,7 +49,7 @@
 html, body {
 	height: 100%;
 }
-.main_page{
+.main_page, .armmix_page{
 	/*height: 100%;*/
 	font-size: 18px;
 	font-family: 'Tahoma';
@@ -61,16 +61,15 @@ html, body {
 	margin: 0 auto;
 }
 .header_nav {
-	padding: 4px 0;
 	border-bottom: 2px solid #fff;
 }
 .logo{
 	float: left;
-	margin-left: 10px;
+	margin: 4px 10px 1px 5px;
 }
 .menu {
 	float: right;
-	margin: 24px 11px 0 0;
+	margin: 0px;
 }
 .menu li {
 	list-style: none;
@@ -82,12 +81,18 @@ html, body {
 .menu a{
 	font-family: 'Archangelsk';
 	font-size: 20px;
-	display: inline-block;
+	display: block;
+	padding: 28px 10px;
 	color: #fff;
 	text-decoration: none;
-    margin: 0 15px;
+    margin: 0;
 }
-
+.menu a:hover {
+	background-color: #f58220;
+}
+.menu .active {
+	background-color: #f58220;
+}
 /*s:carousel*/
 .slider {
     background: #f58220;
@@ -174,7 +179,7 @@ content p{
 	margin-top: 15px;
 }
 content ul {
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
 content li{
 	text-indent: 5px;
@@ -191,10 +196,15 @@ content li{
 .bld {
 	font-weight: bold;
 }
+.armmix {
+	float: left;
+	margin: 30px 90px;
+}
 footer {
 	height: 61px;
 	background: #f58220;
-	margin-top: -61px;
+	color: #fff;
+	/*margin-top: -61px;*/
 	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -231,6 +241,33 @@ footer .wrapper {
 	position: absolute;
 	left: -20px;
     top: 3px;
+}
+/*armmix*/
+.product{
+	height: 440px;
+	background: #3d2108;
+}
+iframe {
+	margin: 47px 0 47px 10px;
+}
+.product .beton {
+    margin: 60px 15px 70px 10px;
+}
+.social_menu{
+	float: right;
+	margin: 47px 5px;
+}
+.social_menu li{
+	list-style: none;
+}
+
+h1 {
+	font-family: 'RedRing-Light';
+    font-size: 21px;
+    margin: 20px;
+    color: #f58220;
+    width: 100%;
+    text-align: center;
 }
 .clearfix:after {
 	content:'';
