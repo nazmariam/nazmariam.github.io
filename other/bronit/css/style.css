@@ -59,8 +59,6 @@ html, body {
 .wrapper{
 	width: 940px;
 	margin: 0 auto;
-	/*min-height: 100%;*/
-	padding: 5px;
 }
 .header_nav {
 	padding: 4px 0;
@@ -68,11 +66,11 @@ html, body {
 }
 .logo{
 	float: left;
-	
+	margin-left: 10px;
 }
 .menu {
 	float: right;
-	margin: 24px 80px 0 0;
+	margin: 24px 11px 0 0;
 }
 .menu li {
 	list-style: none;
@@ -87,7 +85,7 @@ html, body {
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
-	width: 100px;
+    margin: 0 15px;
 }
 
 /*s:carousel*/
