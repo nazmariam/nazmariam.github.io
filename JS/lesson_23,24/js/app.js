@@ -1,24 +1,24 @@
-require.config({
-    paths: {
-        'jquery': 'http://code.jquery.com/jquery-1.12.0.min',
-    },
-    shim: {
-        'jquery': {
-            exports: 'jQuery'
-        }
-    }
-});
+// require.config({
+//     paths: {
+//         'jquery': 'http://code.jquery.com/jquery-1.12.0.min',
+//     },
+//     shim: {
+//         'jquery': {
+//             exports: 'jQuery'
+//         }
+//     }
+// });
 
 require(
     [
         'tmpl',
-        'jquery',
+        // 'jquery',
         'Model',
         'View',
         'Controller'
     ],
     
-    function (tmpl, $, Model, View, Controller) {
+    function (tmpl, Model, View, Controller) {
         $(function() {
 
             var data = ['Example'];
