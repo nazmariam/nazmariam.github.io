@@ -1,6 +1,6 @@
-require.config({
+requirejs.config({
     paths: {
-        'jquery': 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min',
+        'jquery': 'http://code.jquery.com/jquery-1.12.0.min',
     },
     shim: {
         'jquery': {
@@ -18,7 +18,7 @@ require(
         'Controller'
     ],
     
-    function (tmpl,$, Model, View, Controller) {
+    function (tmpl, $, Model, View, Controller) {
         $(function() {
 
             var data = ['Example'];
