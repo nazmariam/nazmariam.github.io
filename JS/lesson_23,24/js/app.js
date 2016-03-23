@@ -1,6 +1,6 @@
 requirejs.config({
     paths: {
-        'jquery': 'http://code.jquery.com/jquery-1.12.0.min'
+        'jquery': 'http://code.jquery.com/jquery-1.12.0.min',
     },
     shim: {
         'jquery': {
