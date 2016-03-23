@@ -1,4 +1,4 @@
-requirejs.config({
+require.config({
     paths: {
         'jquery': 'http://code.jquery.com/jquery-1.12.0.min',
     },
