@@ -1,0 +1,556 @@
+@import 'reset';
+@import 'fonts';
+
+/*My mixins*/
+@mixin font($family, $size, $color) {
+	font-family: $family;
+	font-size: $size;
+	color: $color;
+}
+
+@mixin vertical_align {
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+@mixin breakpoint($point) {
+	@if $point == desktop {
+		@media (min-width: 960px) { @content ; }
+	}
+
+	@else if $point == tablet {
+		@media (min-width: 768px) { @content ; }
+	}
+
+	@else if $point == mobileonly {
+		@media (max-width: 768px)  { @content ; }
+	}
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header {
+	background: url('../img/bcg.jpg') center center no-repeat;
+	height: 540px;
+	text-align: center;
+	position: relative;
+	padding-top: 19px;
+
+	@include breakpoint(tablet) {
+		height: 700px;
+	}
+}
+
+.header__name {
+	@include font('Montserrat Bold', 20px, #ffffff);
+	text-transform: uppercase;
+	margin-top: 120px;
+
+	@include breakpoint(tablet) {
+		margin: 0 0 0 65px;
+		float: left;
+	}
+
+	@include breakpoint(desktop) {
+		margin: 0 0 0 250px;
+	}
+}
+
+.header__slogan {
+	@include font('Montserrat Bold', 30px, #ffffff);
+	text-transform: uppercase;
+	margin-top: 40px;
+	
+	@include breakpoint(tablet) {
+		@include font('Montserrat Bold', 52px, #ffffff);
+		width: 40%;
+		margin: 210px auto 0;
+	}
+}
+
+.header__text {
+	@include font('Roboto Light', 18px, #ffffff);
+	margin-top: 20px; 
+
+	@include breakpoint(tablet) {
+		@include font('Roboto Light', 24px, #ffffff);
+		margin-top: 37px; 
+	}
+}
+
+.header__action {
+	@include font('Montserrat Bold', 14px, #ffffff);  
+	width: 280px;
+	height: 40px;
+	margin-top: 18px;
+	background-color: #ff4e50;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	@include breakpoint(tablet) {
+		margin-top: 33px; 
+	}
+}
+.howitworks {
+	overflow: hidden;
+	text-align: center;
+	padding-top: 40px;
+	width: 320px;
+	margin: 0 auto;
+
+	@include breakpoint(tablet) {
+		width: 768px;
+	}
+}
+
+.howitworks__header {
+	@include font('Montserrat Bold', 22px, #333333);
+	padding-bottom: 15px;
+	@include breakpoint(tablet) {
+		padding: 100px 0 33px;
+	}
+}
+.partners {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.partners__list {
+	overflow: hidden;
+
+	@include breakpoint(tablet) {
+		width: 550px;
+		margin: 0 auto;
+	}
+
+	@include breakpoint(desktop) {
+		width: 940px;
+	}
+}
+
+.partners__header {
+	@include font('Montserrat Bold', 22px, #333333);
+	padding-bottom: 13px;
+	padding: 38px 0 13px 0;
+	
+	@include breakpoint(tablet) {
+		width: 768px;
+		margin: 0 auto;
+		padding: 100px 0 33px;
+	}
+}
+
+.partners__item {
+	padding: 0 50px;
+	width: 320px;	
+	margin: 0 auto;
+
+	@include breakpoint(tablet) {
+		width: 50%;
+		float: left;
+	}
+
+	@include breakpoint(desktop) {
+		width: 25%;
+	}
+}
+
+.partners__image-container {
+	display: inline-block;
+	position: relative;
+}
+
+.partners__image {
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.partners__type {
+	position: absolute;
+	z-index: 2;
+	right: 0;
+	bottom: 0;
+}
+
+.partners__name {
+	@include font('Montserrat Bold', 14px, #333333);
+	padding: 15px 0 20px 0;
+}
+
+.partners__about {
+	@include font('Roboto Light', 14px, #666666);
+	padding-bottom: 29px;
+}
+
+.partners__more {
+	@include font('Montserrat Bold', 14px, #ff4e50);
+	width: 280px;
+	height: 36px;
+	border: 2px solid #ff4e50;
+	border-radius: 20px;
+	display: block;	
+	margin: 0 auto;
+}
+
+.partners__more::after {
+	@include vertical-align;
+}
+.ideas {
+	text-align: center;
+}
+
+.ideas__header {
+	@include font('Montserrat Bold', 22px, #333333);
+	padding: 40px 0 15px 0;
+	@include breakpoint(tablet) {
+		padding: 0 0 40px 0;
+	}
+}
+
+/*.ideas__item {
+	position: relative;
+	height: 130px;
+	overflow: hidden;
+}
+.ideas__item::after {
+	@include vertical-align;
+}
+.ideas__image {
+	position: absolute;
+	z-index: -1;
+	left: 3%;
+	width: 300px;
+	height: auto;
+}
+.ideas__text {
+	@include font('Montserrat Bold', 22px, #000000);
+	display: inline-block;
+}*/
+.partners-search {
+	text-align: center;
+	height: 270px;
+	border-bottom: 2px solid #ff4e50;
+}
+
+.partners-search__header {
+	@include font('Montserrat Bold', 22px, #333333);
+	padding: 30px 0 18px 0;
+
+	@include breakpoint(tablet) {
+		padding-bottom: 35px;
+	}
+}
+
+.partners-search__question {
+	@include font('Roboto Light', 18px, #333333);
+	padding-bottom: 16px;
+
+	@include breakpoint(tablet) {
+		padding-bottom: 39px;
+	}
+}
+
+.partners-search__input {
+	@include font('Roboto Light', 14px, #999999);
+	width: 280px;
+	height: 40px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	padding-left: 15px;
+}
+
+.partners-search__submit {
+	@include font('Montserrat Bold', 14px, #ffffff);
+	height: 40px;
+	width: 280px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 25px;
+	background-color: #ff4e50;
+	text-align: center;
+	@include breakpoint(tablet) {
+		width: 160px;
+	}
+}
+
+.partners-search__submit::after {
+	@include vertical-align;
+}
+.footer {
+	text-align: center;
+	@include breakpoint(tablet) {
+		padding-top: 40px;
+	}
+}
+
+.hor-extender {
+	display: inline-block;
+	vertical-align: top;
+	width: 24%;
+}
+
+.footer__name {
+	@include font('Montserrat Bold', 16px, #ff4e50);
+	text-transform: uppercase;
+	padding-top: 16px;
+	@include breakpoint(tablet) {
+		display: inline-block;
+		vertical-align: top;
+		width: 35%;
+	}
+}
+
+.footer__list-name {
+	@include font('Montserrat Bold', 14px, #333333);
+	text-align: center;
+	padding: 18px 0 6px;
+	@include breakpoint(tablet) {
+		text-align: left;
+	}
+}
+
+.footer__list {
+	@include breakpoint(tablet) {
+		display: inline-block;
+		vertical-align: top;
+		width: 13%;
+	}
+}
+
+.footer__partners {
+	@include font('Montserrat Bold', 14px, #333333);
+	padding: 18px 0 6px;
+	@include breakpoint(tablet) {
+		display: inline-block;
+		vertical-align: top;
+		width: 24%;
+	}
+}
+
+.footer__list-item {
+	@include font('Roboto Light', 14px, #666666);
+	display: inline-block;
+	@include breakpoint(tablet) {
+		padding: 7px 0;
+		width: 100%;
+		text-align: left;
+	}
+}
+
+.footer__designed {
+	@include font('Montserrat Bold', 10px, #cccccc);
+	text-transform: uppercase;
+	padding: 18px 0 10px;
+	@include breakpoint(tablet) {
+		display: inline-block;
+		vertical-align: top;
+		width: 24%;
+	}
+}
+
+.footer__designed > * {
+	padding-bottom: 10px;
+}
+/* for account login/signup*/
+.account {
+	@include breakpoint(tablet) {
+	   	float: right;
+	   	margin-right: 50px;
+	}
+
+	@include breakpoint(desktop) {
+		margin-right: 250px;
+	}
+}
+
+.account__login {
+	@include font('Montserrat Bold', 14px, #fefefe);
+	text-decoration: none;
+	display: inline-block;
+	width: 90px;
+	height: 36px;
+}
+
+.account__signup {
+	@extend .account__login;
+	border: 2px solid #fff;
+	border-radius: 19px;
+}
+
+.account__login::after,
+.account__signup::after {
+	@include vertical_align;
+}
+.jcarousel {
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+	height: 240px;
+	display: inline-block;
+	margin-bottom: 10px;
+	
+	@include breakpoint(tablet) {
+		width: 250px;
+		height: 400px;
+	}
+}
+
+.jcarousel ul {
+	position: relative;
+	width: 1000px;
+}
+
+.jcarousel__arrow-left {
+	display: none;
+
+	@include breakpoint(tablet) {
+		background: url('../img/768/arrow-left.png') no-repeat;
+		display: block;
+		position: absolute;
+		width: 32px;
+		height: 55px;
+		z-index: 2;
+		top: 10%;
+		left: 5%;
+		cursor: pointer;
+	}
+
+	@include breakpoint(desktop) {
+		top: 40%;
+	}
+}
+
+.jcarousel__arrow-right {
+	@extend .jcarousel__arrow-left;
+
+	@include breakpoint(tablet) {
+		background: url('../img/768/arrow-right.png') no-repeat;
+		left: 82%;
+	}
+}
+
+.jcarousel__item {
+	position: relative;
+	height: 250px;
+	width: 250px;
+	padding: 20px;
+	text-align: left;
+
+	@include breakpoint(tablet) {
+		float: left;
+		width: 25%;
+		height: 400px;
+	}
+}
+
+.jcarousel__textblock {
+	position: absolute;
+	bottom: 10%;
+	
+	@include breakpoint(tablet) {
+		bottom: 5%;
+		width: 85%;
+	}
+}
+
+.jcarousel__image {
+	position: absolute;
+	z-index: -1;
+	left: 3%;
+	top: 0;
+	
+	@include breakpoint(tablet) {
+		width: 235px;
+	}
+}
+
+.jcarousel__step {
+	@include font('Montserrat Regular', 10px, #ffffff);
+	height: 20px;
+	width: 70px;
+	border-radius: 10px;
+	background-color: #ff4e50;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.jcarousel__step::after {
+	@include vertical-align;
+}
+
+.jcarousel__header {
+	@include font('Montserrat Bold', 24px, #ffffff);
+	padding-top: 20px;
+}
+
+.jcarousel__text {
+	@include font('Roboto Light', 14px, #cccccc);
+	padding-top: 20px;
+}
+// isotope
+
+.grid {
+	text-align: center;
+	width: 100%;
+
+	@include breakpoint(tablet) {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+	@include breakpoint(desktop) {
+		width: 960px;
+	}
+}
+
+.grid__item {
+	position: relative;
+	height: 310px;
+	width: 230px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	margin: 0 auto;
+	right: 0;
+	padding: 20px;
+	
+	@include breakpoint(tablet) {
+		margin: 0;
+	}
+
+	@include breakpoint(desktop) {
+		width: 30%;
+	}
+}
+
+.grid__item::after {
+	@include vertical-align;
+}
+
+.grid__item_width {
+	@include breakpoint(tablet) {
+		width: 460px;
+	}
+}
+
+.grid__image {
+	position: absolute;
+	z-index: -1;
+	left: 3%;
+	width: 450px;
+	height: auto;
+}
+
+.grid__text {
+	@include font('Montserrat Bold', 22px, #fff);
+	display: inline-block;
+} 
