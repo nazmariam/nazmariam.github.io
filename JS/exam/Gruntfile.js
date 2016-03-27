@@ -10,12 +10,12 @@ module.exports = function(grunt) {
             }
         },
 
-        // cssmin: {
-        //     dist: {
-        //         src: 'styles/style.css',
-        //         dest: 'styles/style.min.css'
-        //     }
-        // },
+        cssmin: {
+            dist: {
+                src: 'styles/style.css',
+                dest: 'styles/style.min.css'
+            }
+        },
         sass: {
             dist: {
               files: [{
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
-    // grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 

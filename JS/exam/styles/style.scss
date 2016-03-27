@@ -1,7 +1,6 @@
 @import 'reset';
 @import 'fonts';
 
-/*My mixins*/
 @mixin font($family, $size, $color) {
 	font-family: $family;
 	font-size: $size;
@@ -29,6 +28,8 @@
 	}
 }
 
+
+
 body {
 	height: 100%;
 	width: 100%;
@@ -45,6 +46,7 @@ body {
 	text-align: center;
 	position: relative;
 	padding-top: 19px;
+	background-size: cover;
 
 	@include breakpoint(tablet) {
 		height: 700px;
@@ -101,6 +103,9 @@ body {
 		margin-top: 33px; 
 	}
 }
+	.header__action:focus {
+		outline: none;
+	}
 .howitworks {
 	overflow: hidden;
 	text-align: center;
@@ -109,7 +114,7 @@ body {
 	margin: 0 auto;
 
 	@include breakpoint(tablet) {
-		width: 768px;
+		width: 820px;
 	}
 }
 
@@ -117,7 +122,7 @@ body {
 	@include font('Montserrat Bold', 22px, #333333);
 	padding-bottom: 15px;
 	@include breakpoint(tablet) {
-		padding: 100px 0 33px;
+	padding: 100px 0 33px;
 	}
 }
 .partners {
@@ -151,9 +156,10 @@ body {
 }
 
 .partners__item {
-	padding: 0 50px;
+	padding: 0 10px;
 	width: 320px;	
 	margin: 0 auto;
+
 
 	@include breakpoint(tablet) {
 		width: 50%;
@@ -161,7 +167,7 @@ body {
 	}
 
 	@include breakpoint(desktop) {
-		width: 25%;
+		width: 235px;
 	}
 }
 
@@ -190,6 +196,7 @@ body {
 .partners__about {
 	@include font('Roboto Light', 14px, #666666);
 	padding-bottom: 29px;
+	line-height: 20px;
 }
 
 .partners__more {
@@ -200,6 +207,7 @@ body {
 	border-radius: 20px;
 	display: block;	
 	margin: 0 auto;
+	cursor: pointer;
 }
 
 .partners__more::after {
@@ -217,25 +225,6 @@ body {
 	}
 }
 
-/*.ideas__item {
-	position: relative;
-	height: 130px;
-	overflow: hidden;
-}
-.ideas__item::after {
-	@include vertical-align;
-}
-.ideas__image {
-	position: absolute;
-	z-index: -1;
-	left: 3%;
-	width: 300px;
-	height: auto;
-}
-.ideas__text {
-	@include font('Montserrat Bold', 22px, #000000);
-	display: inline-block;
-}*/
 .partners-search {
 	text-align: center;
 	height: 270px;
@@ -278,9 +267,14 @@ body {
 	border-radius: 25px;
 	background-color: #ff4e50;
 	text-align: center;
+	cursor: pointer;
 	@include breakpoint(tablet) {
 		width: 160px;
 	}
+}
+
+.partners-search__submit:focus {
+	outline: none;
 }
 
 .partners-search__submit::after {
@@ -361,7 +355,7 @@ body {
 .footer__designed > * {
 	padding-bottom: 10px;
 }
-/* for account login/signup*/
+
 .account {
 	@include breakpoint(tablet) {
 	   	float: right;
@@ -402,6 +396,7 @@ body {
 	@include breakpoint(tablet) {
 		width: 250px;
 		height: 400px;
+		margin: 0 10px;
 	}
 }
 
@@ -414,7 +409,7 @@ body {
 	display: none;
 
 	@include breakpoint(tablet) {
-		background: url('../img/768/arrow-left.png') no-repeat;
+		background: url('../img/arrow-left.png') no-repeat;
 		display: block;
 		position: absolute;
 		width: 32px;
@@ -434,7 +429,7 @@ body {
 	@extend .jcarousel__arrow-left;
 
 	@include breakpoint(tablet) {
-		background: url('../img/768/arrow-right.png') no-repeat;
+		background: url('../img/arrow-right.png') no-repeat;
 		left: 82%;
 	}
 }
@@ -458,7 +453,7 @@ body {
 	bottom: 10%;
 	
 	@include breakpoint(tablet) {
-		bottom: 5%;
+		bottom: 10%;
 		width: 85%;
 	}
 }
@@ -470,7 +465,9 @@ body {
 	top: 0;
 	
 	@include breakpoint(tablet) {
-		width: 235px;
+	width: 250px;
+    height: 380px;
+        margin: -7px;
 	}
 }
 
@@ -497,11 +494,16 @@ body {
 	@include font('Roboto Light', 14px, #cccccc);
 	padding-top: 20px;
 }
-// isotope
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: block;    
+}
 
-.grid {
+.table {
 	text-align: center;
 	width: 100%;
+	left: 3%;
 
 	@include breakpoint(tablet) {
 		width: 768px;
@@ -513,18 +515,19 @@ body {
 	}
 }
 
-.grid__item {
+.table__item {
 	position: relative;
 	height: 310px;
-	width: 230px;
+	width: 250px;
 	margin-bottom: 10px;
 	overflow: hidden;
 	margin: 0 auto;
 	right: 0;
 	padding: 20px;
+	float: left;
 	
 	@include breakpoint(tablet) {
-		margin: 0;
+		margin: 0 10px;
 	}
 
 	@include breakpoint(desktop) {
@@ -532,20 +535,21 @@ body {
 	}
 }
 
-.grid__item::after {
+.table__item::after {
 	@include vertical-align;
 }
-
-.grid__item_width {
-	@include breakpoint(tablet) {
-		width: 460px;
-	}
+.table__item-big {
+	width: 600px;
+}
+.table__item-big .table__image {
+		width: 600px;
+		height: 300px;	
 }
 
-.grid__image {
+.table__image {
 	position: absolute;
 	z-index: -1;
-	left: 3%;
+	left: 0;
 	width: 450px;
 	height: auto;
 }
