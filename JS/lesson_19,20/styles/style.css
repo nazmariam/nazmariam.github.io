@@ -364,7 +364,8 @@ input[type=text] {
               text-decoration: none; }
           .content .content__news-container .content__news .content__latest-news .content__latest-news__box .content__latest-news--text {
             margin-top: 24px;
-            font-size: 13px; }
+            font-size: 13px;
+            float: none; }
         .content .content__news-container .content__news .content__latest-news .content__latest-news__box--second {
           margin-top: 30px; }
       .content .content__news-container .content__news .content__banners {
