@@ -96,6 +96,8 @@ function checkAnswer(e) {
       function hideModal() {
         $modal.remove();
         $overlay.remove();
+        $( 'input:checkbox' ).prop( 'checked', false ).prop( 'disabled', false );
+
       };
 
   };
