@@ -114,7 +114,7 @@ body {
 	margin: 0 auto;
 
 	@include breakpoint(tablet) {
-		width: 900px;
+		width: 820px;
 	}
 }
 
@@ -394,9 +394,9 @@ body {
 	margin-bottom: 10px;
 	
 	@include breakpoint(tablet) {
-		width: 260px;
-		height: 380px;
-		margin: 0 18px;
+		width: 250px;
+		height: 400px;
+		margin: 0 10px;
 	}
 }
 
@@ -430,7 +430,7 @@ body {
 
 	@include breakpoint(tablet) {
 		background: url('../img/arrow-right.png') no-repeat;
-		left: 87%;
+		left: 82%;
 	}
 }
 
@@ -443,7 +443,7 @@ body {
 
 	@include breakpoint(tablet) {
 		float: left;
-		width: 32%;
+		width: 25%;
 		height: 400px;
 	}
 }
@@ -465,9 +465,9 @@ body {
 	top: 0;
 	
 	@include breakpoint(tablet) {
-	// width: 250px;
-    // height: 380px;
-        margin: 0px;
+	width: 250px;
+    height: 380px;
+        margin: -7px;
 	}
 }
 
@@ -494,6 +494,73 @@ body {
 	@include font('Roboto Light', 14px, #cccccc);
 	padding-top: 20px;
 }
+// isotope
+
+.grid {
+  text-align: center;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .grid {
+      width: 768px;
+      margin: 0 auto; } }
+  @media (min-width: 960px) {
+    .grid {
+      width: 960px; } }
+
+@media (min-width: 768px) {
+  .grid__sizer {
+    width: 1%; } }
+
+.grid__item {
+  position: relative;
+  height: 310px;
+  width: 230px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  right: 0;
+  padding: 20px; }
+  @media (min-width: 768px) {
+    .grid__item {
+      margin: 0; } }
+  @media (min-width: 960px) {
+    .grid__item {
+      width: 30%; } }
+
+.grid__item::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%; }
+
+@media (min-width: 768px) {
+  .grid__item_width {
+    width: 480px; } }
+
+@media (min-width: 960px) {
+  .grid__item_width {
+    width: 585px; } }
+
+.grid__image {
+  position: absolute;
+  z-index: -1;
+  left: 3%;
+  width: 450px;
+  height: auto; }
+
+@media (min-width: 768px) {
+  .grid__image_width {
+    width: 480px; } }
+
+@media (min-width: 960px) {
+  .grid__image_width {
+    width: 585px; } }
+
+.grid__text {
+  font-family: "Montserrat Bold";
+  font-size: 22px;
+  color: #fff;
+  display: inline-block; }
 .clearfix:after {
 	content:'';
 	clear: both;
@@ -525,10 +592,6 @@ body {
 	right: 0;
 	padding: 20px;
 	float: left;
-	
-	@include breakpoint(mobile) {
-		margin: 0 10px;
-	}
 	
 	@include breakpoint(tablet) {
 		margin: 0 10px;
