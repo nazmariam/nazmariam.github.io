@@ -5,6 +5,12 @@
 	padding: 0;
 }
 
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: block;    
+}
+
 header {
 	width: $width;
 	margin: $center;
@@ -21,11 +27,8 @@ header {
 	float: left;
 	margin-bottom: 35px;
 	text-decoration: none;
+	background: url(../img/logo.png) no-repeat;
 
-	img {
-		float: left;
-		height: 35px;
-	}
 
 	.header__logo__toptext {
 		float: left;
@@ -33,7 +36,7 @@ header {
 		font-weight: bold;
 		font-size: 20px;
 		color: $main_color;
-		padding-left: 10px;
+		padding-left: 45px;
 	}
 
 	.header__logo__bottext {
@@ -42,7 +45,7 @@ header {
 		text-transform: uppercase; 
 		color: $main_color;
 		float: left;
-		padding-left: 10px;
+		padding-left: 47px;
 	}
 
 }
@@ -129,8 +132,12 @@ header {
 		a:hover {
 			color: $orange;
 		}
+}
+
 	.search {
-		float: right;
+		display: block;
+		position: relative;
+		bottom: 60px;
 	}
 	input[type=text] {
 		float: right;    
@@ -153,7 +160,7 @@ header {
     			cursor: pointer;
 			}
 
-}
+
 
 //carouserl
 
@@ -161,6 +168,7 @@ header {
 	margin-top: 40px;
 	position: relative;
 	overflow: hidden;
+	width: 100%;
 }
 
 .jcarousel_wrapper {
@@ -241,10 +249,6 @@ header {
 	color: $orange;
 }
 
-// .header__carousel__text {
-// 	width: 190px
-// }
-
 //information
 
 .header__information-block{
@@ -269,35 +273,37 @@ header {
 			height: 190px;
 			margin-right: 40px;
 		}
+		.header__information-part {
 
-		img {
-			padding-top: 15px;
-		}
+			img {
+				padding-top: 15px;
+			}
 
-		.header__information__name {
-			margin: 16px 0 18px 0;
-			display: inline-block;
-			width: 230px;
-			font-size: 23px;
-			font-weight: bold;
-			color: $main_color;
-		}
+			.header__information__name {
+				margin: 16px 0 18px 0;
+				display: inline-block;
+				width: 230px;
+				font-size: 23px;
+				font-weight: bold;
+				color: $main_color;
+			}
 
-		.header__information__text {
-			color: $main_color;
-			margin-bottom: 16px;
-			font-size: 13px;
-		}
+			.header__information__text {
+				color: $main_color;
+				margin-bottom: 16px;
+				font-size: 13px;
+			}
 
-		.header__information__button {
-			text-decoration: none;
-			font-weight: bold;
-			font-size: 13px;
-			color: $main_color;
-		}
+			.header__information__button {
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 13px;
+				color: $main_color;
+			}
 
-		.header__information__button:hover {
-			color: $hovercolor;
+			.header__information__button:hover {
+				color: $hovercolor;
+			}
 		}
 
 	}
@@ -391,7 +397,9 @@ header {
 					color: $main_color;
 					font-weight: bold;
 				}
-
+				.content__news-pic{
+					float: left;
+				}
 				.content__latest-news__box {
 					font-family: $ubuntu;
 					position: relative;
@@ -413,21 +421,14 @@ header {
 						color: $hovercolor;
 					}	
 
-					.content__latest-news--by {
+					p {
 						float: left;
 						font-size: 13px;
 						margin-right: 10px;
 
-						span {
+						a {
 							color: $hovercolor;
-						}
-					}
-
-					.content__latest-news--comments {
-						font-size: 13px;
-
-						span {
-							color: $hovercolor;
+							text-decoration: none;
 						}
 					}
 

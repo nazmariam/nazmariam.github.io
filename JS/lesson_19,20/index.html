@@ -15,7 +15,6 @@
 	<div class="wrapper">
 		<header>
 			<a href="#" class="header__logo">
-				<img src="img/logo.png">
 				<p class="header__logo__toptext">Build Home</p>
 				<p class="header__logo__bottext">industrial theme</p>	
 			</a>
@@ -27,16 +26,16 @@
 				<a href="#" class="linkedin"></a>
 				<a href="#" class="skype"></a>
 			</div>
-
-			<ul class="header__navigation">
-				<li><a class="now" href="/">HOME</a></li>
-				<li><a href="#">FEATURES</a></li>
-				<li><a href="#">SERVICES</a></li>
-				<li><a href="#">NEWS</a></li>
-				<li><a href="#">SHOP</a></li>
-				<li class="search"><input type="text" placeholder="Search..."></li>
-			</ul>
-
+			<!-- <div class="header__block clearfix"> -->
+				<ul class="header__navigation">
+					<li><a class="now" href="/">HOME</a></li>
+					<li><a href="#">FEATURES</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">SHOP</a></li>
+				</ul>
+					<span class="search"><input type="text" placeholder="Search..."></span>
+			<!-- </div> -->
 			<div class="header__carousel">
 				<div class="jcarousel_wrapper">
 					<div class="jcarousel">
@@ -70,37 +69,37 @@
 					<div class="jcarousel_pagination">
 					</div>
 				</div>
-
-<!-- 				<div class="header__carousel__text">
-					<p class="header__carousel__toptext">BUILD</p>
-					<p>YOUR</p>
-					<p>BUISNESS</p>
-				</div> -->
 			</div>
 
 			<div class="header__information-block">
 				<div class="header__information header__information--first">
 					<p class="header__information__huge-number">01</p>
-					<img src="img/icon1.png" alt="">
-					<p class="header__information__name">Power Inside</p>
-					<p class="header__information__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
-					<a href="#" class="header__information__button">Read more &#8594;</a>
+					<div class="header__information-part">
+						<img src="img/icon1.png" alt="">
+						<p class="header__information__name">Power Inside</p>
+						<p class="header__information__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+						<a href="#" class="header__information__button">Read more &#8594;</a>
+					</div>
 				</div>
 
 				<div class="header__information header__information--second">
 					<p class="header__information__huge-number">02</p>
-					<img src="img/icon2.png" alt="">
-					<p class="header__information__name">New Technologies</p>
-					<p class="header__information__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
-					<a href="#" class="header__information__button">Read more &#8594;</a>
+					<div class="header__information-part">
+						<img src="img/icon2.png" alt="">
+						<p class="header__information__name">New Technologies</p>
+						<p class="header__information__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+						<a href="#" class="header__information__button">Read more &#8594;</a>
+					</div>
 				</div>
 
 				<div class="header__information header__information--third">
 					<p class="header__information__huge-number">03</p>
-					<img src="img/icon3.png" alt="">
-					<p class="header__information__name">Fast Support</p>
-					<p class="header__information__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
-					<a href="#" class="header__information__button">Read more &#8594;</a>
+					<div class="header__information-part">
+						<img src="img/icon3.png" alt="">
+						<p class="header__information__name">Fast Support</p>
+						<p class="header__information__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+						<a href="#" class="header__information__button">Read more &#8594;</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -134,31 +133,23 @@
 					<div class="content__latest-news">
 						<p class="content__latest-news__title">Latest News</p>
 						<div class="content__latest-news__box content__latest-news__box--first">
-							<img src="img/news1.png" alt="">
-							<a href="#" class="content__latest-news--title">
-								Advanced Machinery Help Impove Quality
-							</a>
-							<p class="content__latest-news--by">
-								by <span>cmsmasters</span>
-							</p>
-							<p class="content__latest-news--comments">
-								Comments <span>(6)</span>
-							</p>
-							<p class="content__latest-news--text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+							<div class="content__news-pic clearfix"><a href=""><img src="img/news1.png" alt=""></a></div>
+							<div class="content__news-block">
+								<a href="#" class="content__latest-news--title">Advanced Machinery Help Impove Quality</a>
+								<p>by <a href="">cmsmasters</a></p>
+								<p>Comments <a href="">(6)</a></p>
+								<p class="content__latest-news--text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+							</div>
 						</div>
 
 						<div class="content__latest-news__box content__latest-news__box--second">
-							<img src="img/news2.png" alt="">
-							<a href="#" class="content__latest-news--title">
-								Advanced Machinery Help Impove Quality
-							</a>
-							<p class="content__latest-news--by">
-								by <span>cmsmasters</span>
-							</p>
-							<p class="content__latest-news--comments">
-								Comments <span>(6)</span>
-							</p>
-							<p class="content__latest-news--text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+							<div class="content__news-pic clearfix"><a href=""><img src="img/news2.png" alt=""></a></div>
+							<div class="content__news-block">
+								<a href="#" class="content__latest-news--title">Advanced Machinery Help Impove Quality</a>
+								<p>by <a href="#">cmsmasters</a></p>
+								<p>Comments <a href="#">(6)</a></p>
+								<p class="content__latest-news--text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+							</div>
 						</div>
 					</div>
 					<div class="content__banners" >

@@ -35,36 +35,14 @@ $('.content__services').mouseout(function(){
   $(this).removeClass('hover');
 });
 
-
-
-
-  // var allAccordions = $('.accordion div.data');
-  // var allAccordionItems = $('.accordion .accordion-item');
-  // $('.accordion__block > .accordion-item').click(function() {
-  //   if($(this).hasClass('open'))
-  //   {
-  //     $(this).removeClass('open');
-  //     $(this).next().slideUp("slow");
-  //   }
-  //   else
-  //   {
-  //   allAccordions.slideUp("slow");
-  //   allAccordionItems.removeClass('open');
-  //   $(this).addClass('open');
-  //   $(this).next().slideDown("slow");
-  //   return false;
-  //   }
-  // });
-
 $(function() {  
  $(".accordion__block > .accordion-item").click(function(){
   if(false==$(this).next().is(':visible')){
    $('div.data').slideUp(300);
     $('.accordion .accordion-item').removeClass('open');
   }
-  $('.accordion .accordion-item').removeClass('open');
+  $(this).toggleClass('open');
   $(this).next().slideToggle(300);
-  $(this).addClass('open');
  });
 })
 
