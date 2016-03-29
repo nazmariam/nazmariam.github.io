@@ -554,10 +554,12 @@ body {
 
 @media (min-width: 768px) {
   .grid__item_width {
-    width: 480px; } }
+    width: 480px;
+    margin: 0 -8px; } }
 @media (min-width: 960px) {
   .grid__item_width {
-    width: 585px; } }
+    width: 585px;
+    margin: 0 -8px; } }
 .grid__image {
   position: absolute;
   z-index: -1;
