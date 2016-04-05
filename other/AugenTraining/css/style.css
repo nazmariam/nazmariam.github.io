@@ -14,7 +14,7 @@ html {
   min-height: 100%;
 }
 body {
-  background: #ced2b2 url(../images/background.jpg) no-repeat center top;
+  background: url(../images/background.jpg) no-repeat center top, #ced2b2 url(../images/bg_dwn.jpg) repeat-y;
   background-size: inherit;
   font-family: 'Open Sans';
   font-style: normal;
@@ -30,6 +30,7 @@ a,
 a:visited, 
 a:active {
   color: #4e4e4e;
+
 }
 a:hover {
   color: #019933;
@@ -46,6 +47,9 @@ a:hover {
 }
 .logo {
   margin: 19px -30px 40px;
+}
+.logo a:focus {
+  outline: none;
 }
 .menu {
   float: right;
@@ -160,12 +164,46 @@ a:hover {
   min-width: 1000px;
   /*background-color: #d5f5c0;*/
   color: #69ba34;
-  padding: 8px 29px;
+  padding: 54px 29px 9px 29px;
   margin: 0 auto;
   z-index:1050;
 }
-
-
+.footer_contact {
+  float: left;
+  margin: -5px 0 0 26px;
+  /*line-height: 33px;*/
+}
+.contact_title  {
+  font-size: 22px;
+  color: #009933;
+  margin: 0 0 28px 0;
+}
+.contacts {
+  color:#505050;
+  font-size: 15px;
+}
+.footer_up {
+  float: right;
+  margin: 0 24px;
+}
+.menu_footer {
+  float: right;
+  font-size: 21px;
+  margin: -9px 171px;
+}
+.menu_footer li {
+  list-style-type: none;
+  text-decoration: underline;
+}
+.menu_footer li a {
+  color: #009933;
+  line-height: 36px;
+}
+.footer_copy {
+    width: 322px;
+    margin: 11px auto;
+    font-size: 16px;
+}
 /*--------------------------------s: mixins------------*/
 
 .clearfix:after {
