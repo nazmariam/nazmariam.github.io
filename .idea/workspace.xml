@@ -4,6 +4,8 @@
     <list default="true" id="519f60ba-13dc-4972-b969-6860a6e6ce88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kottans/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kottans/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kottans/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/kottans/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kottans/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/kottans/styles/style.css" afterDir="false" />
     </list>
     <list id="05bd245f-81e0-4da3-a5e6-64a73d178ac9" name="Revert &quot;DOM done&quot;" comment="Revert &quot;DOM done&quot;&#10;&#10;This reverts commit 40e4923e" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,12 +15,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kottans/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="408">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -26,14 +37,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kottans/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1703" />
+            <state relative-caret-position="1751">
+              <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kottans/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-567" />
+            <state relative-caret-position="577">
+              <caret line="53" selection-start-line="53" selection-start-column="2" selection-end-line="58" selection-end-column="3" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -55,16 +70,17 @@
       <list>
         <option value="$PROJECT_DIR$/kottans/script.js" />
         <option value="$PROJECT_DIR$/kottans/styles/stele.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/kottans/index.html" />
         <option value="$PROJECT_DIR$/kottans/scripts/script.js" />
         <option value="$PROJECT_DIR$/kottans/styles/style.css" />
-        <option value="$PROJECT_DIR$/kottans/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="294" />
-    <option name="y" value="45" />
-    <option name="width" value="1175" />
+    <option name="x" value="132" />
+    <option name="y" value="225" />
+    <option name="width" value="1296" />
     <option name="height" value="1067" />
   </component>
   <component name="ProjectView">
@@ -72,6 +88,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,7 +123,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,17 +160,19 @@
       <workItem from="1545741860770" duration="8940000" />
       <workItem from="1545754761014" duration="2634000" />
       <workItem from="1545757924529" duration="4219000" />
-      <workItem from="1545763152054" duration="254000" />
+      <workItem from="1545763152054" duration="514000" />
+      <workItem from="1545805852240" duration="4056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16047000" />
+    <option name="totallyTimeSpent" value="20363000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="294" y="45" width="1175" height="1067" extended-state="0" />
+    <frame x="132" y="225" width="1296" height="1067" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26306465" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -166,8 +184,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32975295" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3290461" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32975295" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.10526316" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -219,20 +237,31 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kottans/scripts/script.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kottans/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567" />
+        <state relative-caret-position="731">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kottans/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="408">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kottans/scripts/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kottans/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="53" selection-start-line="53" selection-start-column="2" selection-end-line="58" selection-end-column="3" />
         </state>
       </provider>
     </entry>

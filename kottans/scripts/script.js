@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-
-    const pony = [
+    let pony = [
         {
             name: 'Twilight Sparkle',
             bio: 'Twilight Sparkle is the central character of the series, based on the first generation or "G1" unicorn toy Twilight. She is depicted in the show\'s first three seasons as a purple unicorn with a pink-streaked indigo mane, and as a winged unicorn called an "alicorn" after the season three finale "Magical Mystery Cure". She leads the Mane Six during their adventures and helps resolve her friends\' differences. She is an intelligent and dutiful scholar with an avid love of learning and skill in unicorn magic such as levitation, teleportation, and the creation of force fields. Director Jayson Thiessen describes her as "kind of a neurotic perfectionist" who has "a touch OCD", prone to suffering from nervous breakdowns when confronted with a problem that goes against her understanding.',
@@ -32,32 +31,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
             img:'<img src="images/rarity.png">'
         },
     ];
-
-    const navContent = document.querySelector(".main");
-    navContent.innerHTML = pony[0].bio+pony[0].img;
-    document.querySelectorAll('li').forEach(function (el,ind) {
-        el.addEventListener('click', function() {
-
-            let main = document.querySelector('.main');
-            let li = document.querySelectorAll('li');
-             main.classList.add("active");
-             navContent.innerHTML = pony[ind].bio+pony[ind].img;
-
-             li.forEach(function (el) {
-                el.classList.remove("active");
-             });
-            this.classList.add("active");
-        });
+    let li = document.querySelectorAll('li');
+    let main = document.querySelector('.main');
+    let ul = document.querySelector('ul');
+    main.innerHTML = pony[0].bio+pony[0].img;
+    ul.addEventListener('click', function(e) {
+        let ponyObj = pony.find(obj => obj.name === e.target.textContent);
+        main.innerHTML = ponyObj.bio+ponyObj.img;
+        li.forEach(function (el){el.classList.remove("active")});
+        e.target.classList.add("active");
     });
-
-
-
-
-
-
-
-
-
-
-
 });

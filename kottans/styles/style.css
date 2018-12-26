@@ -1,13 +1,14 @@
 body{
     background: url("../images/bg.jpg") center repeat-x;
     background-size: auto;
+    margin: 0;
+    padding: 0;
 }
 .content{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: start;
-    flex-wrap: wrap;
 }
 .navigation ul{
     list-style: none;
@@ -25,25 +26,22 @@ body{
 .navigation .active{
     background-color: #306d8b;
 }
-
-.content .active{
-    display: block;
-
-}
 aside {
     max-width: 20%;
     min-width: 300px;
+    margin: 0;
 }
 .main{
     color: #4dabda;
     max-width: 70%;
+    min-width: 20%;
     padding: 20px;
     font-size: 21px;
     font-family: "Open Sans", sans-serif;
     background-color: aliceblue;
     border-radius: 20px;
     border: 1px solid deepskyblue;
-    margin: 20px;
+    margin: 2%;
     position: relative;
 }
 .main img {
@@ -52,8 +50,7 @@ aside {
     right: -10px;
     bottom: -165px;
 }
-
-@media(max-width: 1290px) {
+@media(max-width: 700px) {
     .content{
         flex-direction: column;
         align-items: center;
