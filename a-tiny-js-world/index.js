@@ -2,9 +2,8 @@
    Complete the below for code reviewers' convenience:
 
    Code repository: https://github.com/nazmariam/nazmariam.github.io/tree/master/a-tiny-js-world
-   Web app: https://nazmariam.github.io/tree/master/a-tiny-js-world/
+   Web app: https://nazmariam.github.io/a-tiny-js-world/
 */
-
 // ======== OBJECTS DEFINITIONS ========
 function Citizen(species, name, gender, legs, hands, say) {
     this.species = species;
@@ -22,10 +21,8 @@ function Animal(species, name, gender, say) {
     this.hands = 0;
     this.say = say;
 }
-
 Animal.prototype = Object.create(Citizen.prototype);
 Animal.prototype.constructor = Animal;
-
 function Human(name, gender, say) {
     this.species = 'human';
     this.name = name;
@@ -34,10 +31,8 @@ function Human(name, gender, say) {
     this.hands = 2;
     this.say = say;
 }
-
 Human.prototype = Object.create(Citizen.prototype);
 Human.prototype.constructor = Human;
-
 function Dog(name, gender) {
     Animal.apply(this.arguments);
     this.species = 'dog';
@@ -47,10 +42,8 @@ function Dog(name, gender) {
     this.hands = hands;
     this.say = 'bark-bark';
 }
-
 Dog.prototype = Object.create(Animal.prototype);
 Dog.prototype.constructor = Dog;
-
 function Cat(name, gender){
     this.species = 'cat';
     this.name = name;
@@ -59,10 +52,8 @@ function Cat(name, gender){
     this.hands = 0;
     this.say = 'meow';
 }
-
 Cat.prototype = Object.create(Citizen.prototype);
 Cat.prototype.constructor = Cat;
-
 function CatWoman(name){
     Cat.apply(this.arguments);
     this.species = 'human';
@@ -79,12 +70,8 @@ let citizens = [
     new Cat('Kitty','female'),
     new Human('Meg White','female','I\'m gonna fight them off'),
     new Human('Jack White','male','A seven nation army couldn\'t hold me back'),
-    new CatWoman('Selina Kyle')
-];
-
+    new CatWoman('Selina Kyle')];
 // ======== OUTPUT ========
-
-
 citizens.forEach(el => {
     print("Hi! I'm a "+el.species+". My name is "+el.name+". My gender is: "+el.gender+". I have: "+el.legs+" legs and "+el.hands+" hands"+". I speak like this:\""+el.say+"\"");
 });
