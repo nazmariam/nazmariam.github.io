@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="519f60ba-13dc-4972-b969-6860a6e6ce88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kottans/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kottans/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kottans/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/kottans/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kottans/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/kottans/styles/style.css" afterDir="false" />
     </list>
     <list id="05bd245f-81e0-4da3-a5e6-64a73d178ac9" name="Revert &quot;DOM done&quot;" comment="Revert &quot;DOM done&quot;&#10;&#10;This reverts commit 40e4923e" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,35 +16,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kottans/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+            <state relative-caret-position="102">
+              <caret line="5" column="99" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/a-tiny-js-world/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kottans/scripts/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1751">
-              <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+            <state relative-caret-position="476">
+              <caret line="28" column="12" selection-end-line="62" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kottans/styles/style.css">
+        <entry file="file://$PROJECT_DIR$/a-tiny-js-world/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="53" selection-start-line="53" selection-start-column="2" selection-end-line="58" selection-end-column="3" />
+            <state relative-caret-position="1156">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -57,8 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -71,15 +63,17 @@
         <option value="$PROJECT_DIR$/kottans/script.js" />
         <option value="$PROJECT_DIR$/kottans/styles/stele.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/kottans/styles/style.css" />
         <option value="$PROJECT_DIR$/kottans/index.html" />
         <option value="$PROJECT_DIR$/kottans/scripts/script.js" />
-        <option value="$PROJECT_DIR$/kottans/styles/style.css" />
+        <option value="$PROJECT_DIR$/a-tiny-js-world/index.js" />
+        <option value="$PROJECT_DIR$/a-tiny-js-world/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="132" />
-    <option name="y" value="225" />
+    <option name="x" value="594" />
+    <option name="y" value="133" />
     <option name="width" value="1296" />
     <option name="height" value="1067" />
   </component>
@@ -101,24 +95,6 @@
               <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="kottans" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="kottans" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="kottans" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="kottans" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -126,6 +102,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/prhokay.github.io-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -161,18 +138,18 @@
       <workItem from="1545754761014" duration="2634000" />
       <workItem from="1545757924529" duration="4219000" />
       <workItem from="1545763152054" duration="514000" />
-      <workItem from="1545805852240" duration="4056000" />
+      <workItem from="1545805852240" duration="6687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20363000" />
+    <option name="totallyTimeSpent" value="22994000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="132" y="225" width="1296" height="1067" extended-state="0" />
+    <frame x="255" y="105" width="1296" height="1067" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2424" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -185,13 +162,34 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.10526316" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24919441" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2424" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32975295" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24919441" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -244,24 +242,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kottans/index.html">
+    <entry file="file://$PROJECT_DIR$/kottans/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        <state relative-caret-position="-120">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kottans/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+        <state relative-caret-position="1377">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kottans/styles/style.css">
+    <entry file="file://$PROJECT_DIR$/kottans/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="53" selection-start-line="53" selection-start-column="2" selection-end-line="58" selection-end-column="3" />
+        <state relative-caret-position="102">
+          <caret line="5" column="99" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a-tiny-js-world/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="12" selection-end-line="62" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a-tiny-js-world/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
