@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="519f60ba-13dc-4972-b969-6860a6e6ce88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-tiny-js-world/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-tiny-js-world/index.js" afterDir="false" />
     </list>
     <list id="05bd245f-81e0-4da3-a5e6-64a73d178ac9" name="Revert &quot;DOM done&quot;" comment="Revert &quot;DOM done&quot;&#10;&#10;This reverts commit 40e4923e" />
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/a-tiny-js-world/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            <state relative-caret-position="374">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -142,12 +141,12 @@
       <workItem from="1546006831819" duration="1873000" />
       <workItem from="1546016065588" duration="3272000" />
       <workItem from="1546028484666" duration="3062000" />
-      <workItem from="1546086986596" duration="2464000" />
+      <workItem from="1546086986596" duration="3387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35230000" />
+    <option name="totallyTimeSpent" value="36153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="731" y="237" width="1164" height="879" extended-state="0" />
@@ -276,8 +275,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/a-tiny-js-world/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="374">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
