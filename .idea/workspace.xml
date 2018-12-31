@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="519f60ba-13dc-4972-b969-6860a6e6ce88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frogger/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frogger/images/char-boy.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/char-boy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frogger/images/enemy-bug.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/enemy-bug.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frogger/images/grass-block.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/grass-block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frogger/images/stone-block.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/stone-block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frogger/images/water-block.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/water-block.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frogger/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/js/app.js" afterDir="false" />
     </list>
     <list id="05bd245f-81e0-4da3-a5e6-64a73d178ac9" name="Revert &quot;DOM done&quot;" comment="Revert &quot;DOM done&quot;&#10;&#10;This reverts commit 40e4923e" />
@@ -14,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frogger/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="1258">
+              <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frogger/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="51">
+                <caret line="2" column="129" selection-start-line="2" selection-start-column="129" selection-end-line="2" selection-end-column="129" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -73,6 +90,7 @@
         <option value="$PROJECT_DIR$/a-tiny-js-world/index.html" />
         <option value="$PROJECT_DIR$/a-tiny-js-world/index.js" />
         <option value="$PROJECT_DIR$/frogger/js/app.js" />
+        <option value="$PROJECT_DIR$/frogger/README.md" />
       </list>
     </option>
   </component>
@@ -102,18 +120,6 @@
               <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="frogger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="frogger" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="frogger" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -184,18 +190,17 @@
       <workItem from="1546215045449" duration="548000" />
       <workItem from="1546262964710" duration="9000" />
       <workItem from="1546265292435" duration="5027000" />
-      <workItem from="1546281158003" duration="4546000" />
+      <workItem from="1546281158003" duration="7768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54061000" />
+    <option name="totallyTimeSpent" value="57283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1173" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17487548" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17487548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -208,7 +213,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.12150434" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.12150434" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -323,14 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frogger/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frogger/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -363,8 +360,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frogger/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="1258">
+          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frogger/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="2" column="129" selection-start-line="2" selection-start-column="129" selection-end-line="2" selection-end-column="129" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
