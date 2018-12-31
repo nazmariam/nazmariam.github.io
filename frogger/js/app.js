@@ -1,3 +1,10 @@
+const start = {
+    x: 202,
+    y: 390
+};
+
+
+
 // Enemies our player must avoid
 var Enemy = function(x,y,speed) {
     // Variables applied to each of our instances go here,
@@ -29,40 +36,49 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-var Player = function(x,y){
-    this.sprite = 'images/char-cat-girl.png';
-    this.x = x;
-    this.y = y;
-
+let Player = function(){
+    this.sprite = 'images/char-boy.png';
+    this.x = start.x;
+    this.y = start.y;
+    this.visible = true;
 };
-Player.prototype.update = function(x,y) {
-    this.x = x;
+Player.prototype.update = function() {
 
 };
 Player.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    if(this.visible){
+        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    }
+
 };
 Player.prototype.handleInput = function(code){
     switch (code) {
-        case 37:
-            this.x--;
+        case 'left':
+            this.x-=100;
             break;
-        case 38:
-            this.y++;
+        case 'down':
+            this.y+=82;
             break;
-        case 39:
-            this.x++;
+        case 'right':
+            this.x+=100;
             break;
-        case 40:
-            this.y--;
+        case 'up':
+            this.y-=82;
 
     }
 };
+Player.prototype.constructor = Player;
+
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
-
+let allEnemies = [
+    new Enemy(-100, 55, 100),
+    new Enemy(-400, 135, 70),
+    new Enemy(0, 220, 50)
+];
+let player = new Player();
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
