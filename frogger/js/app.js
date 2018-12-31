@@ -2,8 +2,11 @@ const start = {
     x: 202,
     y: 390
 };
-
-
+const field = {
+    w: 505,
+    h: 606
+};
+let win = 0;
 
 // Enemies our player must avoid
 var Enemy = function(x,y,speed) {
@@ -25,14 +28,20 @@ Enemy.prototype.update = function(dt) {
     // which will ensure the game runs at the same speed for
     // all computers.
     this.x += dt*this.speed;
-    
+    if (checkCollision(this)){
+        alert("You loose");
+        player.x = start.x;
+        player.y = start.y;
+    }
 };
 
 // Draw the enemy on the screen, required method for game
+
 Enemy.prototype.render = function() {
+    if(this.x >= field.w)
+        this.x = -20;
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
@@ -46,28 +55,58 @@ Player.prototype.update = function() {
 
 };
 Player.prototype.render = function() {
-    if(this.visible){
+    this.visible &&
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-    }
 
+};
+Player.prototype.toStart = function () {
+    this.x = start.x;
+    this.y = start.y;
 };
 Player.prototype.handleInput = function(code){
     switch (code) {
         case 'left':
             this.x-=100;
+            if(this.x<0){
+                this.x = 0;
+            }
             break;
         case 'down':
             this.y+=82;
+            if(this.y>390){
+                this.y=390;
+            }
             break;
         case 'right':
             this.x+=100;
+            if(this.x>field.w-20){
+                this.x=field.w-102;
+            }
             break;
         case 'up':
-            this.y-=82;
 
+            this.y-=82;
+            if (this.y < 0) {
+                win++;
+                console.log(win);
+                alert("You win "+win+" times!");
+                this.toStart();
+            }
+            break;
     }
 };
-Player.prototype.constructor = Player;
+function checkCollision(enemy) {
+    if (
+        player.x < enemy.x + 62 &&
+        player.x + 62 > enemy.x &&
+        player.y < enemy.y + 20 &&
+        player.y + 20 > enemy.y
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
