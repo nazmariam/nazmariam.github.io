@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="519f60ba-13dc-4972-b969-6860a6e6ce88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frogger/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frogger/images/char-boy.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/char-boy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frogger/images/enemy-bug.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/enemy-bug.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frogger/images/grass-block.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/grass-block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frogger/images/stone-block.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/stone-block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frogger/images/water-block.png" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/images/water-block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frogger/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frogger/js/app.js" afterDir="false" />
     </list>
     <list id="05bd245f-81e0-4da3-a5e6-64a73d178ac9" name="Revert &quot;DOM done&quot;" comment="Revert &quot;DOM done&quot;&#10;&#10;This reverts commit 40e4923e" />
@@ -19,16 +14,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frogger/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+            <state relative-caret-position="544">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frogger/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -55,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frogger/js/engine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="221">
               <caret line="26" column="10" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -89,8 +84,8 @@
         <option value="$PROJECT_DIR$/kottans/scripts/script.js" />
         <option value="$PROJECT_DIR$/a-tiny-js-world/index.html" />
         <option value="$PROJECT_DIR$/a-tiny-js-world/index.js" />
-        <option value="$PROJECT_DIR$/frogger/js/app.js" />
         <option value="$PROJECT_DIR$/frogger/README.md" />
+        <option value="$PROJECT_DIR$/frogger/js/app.js" />
       </list>
     </option>
   </component>
@@ -190,17 +185,19 @@
       <workItem from="1546215045449" duration="548000" />
       <workItem from="1546262964710" duration="9000" />
       <workItem from="1546265292435" duration="5027000" />
-      <workItem from="1546281158003" duration="7768000" />
+      <workItem from="1546281158003" duration="8495000" />
+      <workItem from="1546340987301" duration="2907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57283000" />
+    <option name="totallyTimeSpent" value="60917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1173" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17487548" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1770891" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,18 +347,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frogger/js/engine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="221">
           <caret line="26" column="10" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frogger/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -372,6 +362,13 @@
             <caret line="2" column="129" selection-start-line="2" selection-start-column="129" selection-end-line="2" selection-end-column="129" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frogger/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
         </state>
       </provider>
     </entry>
