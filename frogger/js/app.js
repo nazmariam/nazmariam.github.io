@@ -17,12 +17,13 @@ let Enemy = function(x,y,speed) {
     this.y = y;
     this.speed = speed;
 };
-Enemy.prototype.update = function(dt) {
+Enemy.prototype.update = function(dt,gamer) {
     this.x += dt*this.speed;
-    if (this.checkCollision()){
+
+    if (this.checkCollision(gamer)){
         alert("You loose");
-        player.x = START.x;
-        player.y = START.y;
+        gamer.x = START.x;
+        gamer.y = START.y;
     }
 };
 Enemy.prototype.render = function() {
@@ -30,13 +31,14 @@ Enemy.prototype.render = function() {
         this.x = 0;
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-Enemy.prototype.checkCollision = function(){
+Enemy.prototype.checkCollision = function(gamer){
+
     if (
-        player.x < this.x + STEP.x/2 &&
-        player.x + STEP.x/2 > this.x &&
-        player.y < this.y + STEP.y/4 &&
-        player.y + STEP.y/4 > this.y
-            ) {
+       gamer.x < this.x + STEP.x/2 &&
+        gamer.x + STEP.x/2 > this.x &&
+        gamer.y < this.y + STEP.y/4 &&
+        gamer.y + STEP.y/4 > this.y
+    ) {
         return true;
     } else {
         return false;
@@ -92,6 +94,7 @@ Player.prototype.handleInput = function(code){
             break;
     }
 };
+const player = new Player();
 const allEnemies = [
     new Enemy(-100, 55, 100),
     new Enemy(-400, 135, 70),
@@ -99,7 +102,7 @@ const allEnemies = [
     new Enemy(0, 220, 50),
     new Enemy(-300, 220, 70)
 ];
-const player = new Player();
+
 document.addEventListener('keyup', function(e) {
     let allowedKeys = {
         37: 'left',
