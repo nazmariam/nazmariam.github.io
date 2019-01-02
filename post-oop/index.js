@@ -12,7 +12,6 @@ class Citizen {
         this.say = say;
         this.legs = legs;
         this.hands = hands;
-
     }
 }
 class Animal extends Citizen{
