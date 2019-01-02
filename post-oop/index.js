@@ -39,7 +39,7 @@ const citizens = [
     new Cat('Kitty','female'),
     new Human('Meg White','female','I\'m gonna fight them off'),
     new Human('Jack White','male','A seven nation army couldn\'t hold me back')
-    ];
+];
 // ======== OUTPUT ========
 citizens.forEach(el => {
     print(`<div>
