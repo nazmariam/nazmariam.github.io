@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="519f60ba-13dc-4972-b969-6860a6e6ce88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory-pair-game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/memory-pair-game/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory-pair-game/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/memory-pair-game/js/script.js" afterDir="false" />
     </list>
     <list id="05bd245f-81e0-4da3-a5e6-64a73d178ac9" name="Revert &quot;DOM done&quot;" comment="Revert &quot;DOM done&quot;&#10;&#10;This reverts commit 40e4923e" />
@@ -18,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/memory-pair-game/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
+            <state relative-caret-position="1479">
               <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
             </state>
           </provider>
@@ -36,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/memory-pair-game/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="336">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -91,8 +90,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="292" />
-    <option name="y" value="119" />
+    <option name="x" value="114" />
+    <option name="y" value="103" />
     <option name="width" value="1136" />
     <option name="height" value="1081" />
   </component>
@@ -189,15 +188,15 @@
       <workItem from="1546419628566" duration="57000" />
       <workItem from="1546423803592" duration="1107000" />
       <workItem from="1546430088253" duration="19548000" />
-      <workItem from="1546500912356" duration="9021000" />
+      <workItem from="1546500912356" duration="10193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98780000" />
+    <option name="totallyTimeSpent" value="99952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="292" y="119" width="1136" height="1081" extended-state="0" />
+    <frame x="114" y="103" width="1136" height="1081" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15412845" />
@@ -385,13 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memory-pair-game/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/memory-pair-game/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -399,10 +391,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/memory-pair-game/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/memory-pair-game/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="336">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
