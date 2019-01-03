@@ -1,0 +1,101 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+html * {
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+main {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+aside{
+
+}
+
+aside.filters{
+    padding: 20px;
+    min-width: 200px;
+    max-width: 200px;
+}
+form {
+    margin: 8px;
+}
+fieldset{
+    border: none;
+    margin: 8px 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.flip-container{
+    /*background-color: #83ba43;*/
+}
+.flip-container.male {
+    /*border: 5px solid #4eabda;*/
+    /*background-color: #4eabda;*/
+}
+.flip-container.female{
+    /*border: 5px solid deeppink;*/
+    /*background-color: deeppink;*/
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+    margin: 2px;
+    color: #fff;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 128px;
+    height: 128px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+.flip-container .back{
+    background-color: #83ba43;
+    padding: 8px;
+    box-sizing: border-box;
+}
