@@ -12,51 +12,36 @@
 <main>
     <aside class="filters">
         <form  id="form-search">
-            <input id="name-search" type="text" name="name-search" placeholder="Search" value="">
+            <input id="name-search" type="text" name="name-search" placeholder="Search name or surname" value="">
             <input type="submit" value="Search">
         </form>
         <form>
-            <fieldset>
+            <fieldset id="age-sort">
                 <p>Sort by age</p>
-                <button>1-9</button>
-                <button>9-1</button>
+                <label for="sort19">1-9<input id="sort19" type="radio" value="az" name="age-sort"></label>
+                <label for="sort91">9-1<input id="sort91" type="radio" value="za" name="age-sort"></label>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="name-sort">
                 <p>Sort by name</p>
-                <button>A-Z</button>
-                <button>Z-A</button>
+                <label for="sortaz">AZ<input id="sortaz" type="radio" value="az" name="name-sort"></label>
+                <label for="sortza">ZA<input id="sortza" type="radio" value="za" name="name-sort"></label>
             </fieldset>
 
             <fieldset id="gender-sort">
+                <p>Sort by gender</p>
                 <label for="sort-all">all<input id="sort-all" type="radio" value="all" name="gender-sort"></label>
                 <label for="sort-female">female<input id="sort-female" type="radio" value="female" name="gender-sort"></label>
                 <label for="sort-male">male<input id="sort-male" type="radio" value="male" name="gender-sort"></label>
-                <button>Sort by gender</button>
             </fieldset>
-            <input type="reset" value="Reset">
         </form>
-
-
-
-
-
+        <button id="reset">Reset</button>
 
     </aside>
 
     <section class="container">
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-                <div class="front">
-                    <!-- front content -->
-                </div>
-                <div class="back">
-                    <!-- back content -->
-                </div>
-            </div>
-        </div>
     </section>
-
+    <h1>That's all folks! Nothing found...</h1>
 
 </main>
 
