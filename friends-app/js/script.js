@@ -1,18 +1,17 @@
 window.onload = () => {
-    const link = "https://randomuser.me/api/";
-    let amount = 20;
+    const link = "https://randomuser.me/api/?";
     let initData = [];
     let data = [];
     let defaultSearch = 'results=70&inc=gender,name,picture,location,dob,phone';
 
     const cardContainer = document.querySelector(".container");
     function request(reqString){
-        fetch("https://randomuser.me/api/?"+reqString)
+        fetch(link+reqString)
             .then(function(response) {
                 response.json()
                     .then(users => {
                         initData = Array.from(users.results);
-                        data = initData;
+                        data = initData.slice();
                         console.log(initData);
                         insert(initData);
                     });
@@ -66,7 +65,7 @@ window.onload = () => {
         let no_result = document.querySelector('main h1');
         if (flips.length === flips_hidden.length){
             no_result.classList.add('show');
-            console.log('That\'s all folks! Nothing found...');
+            // console.log('That\'s all folks! Nothing found...');
         } else {
             no_result.classList.remove('show');
         }
@@ -100,9 +99,11 @@ window.onload = () => {
                 flips.forEach(function (item) {
                     // let name = item.querySelector('.back h3').textContent;
                     if (!item.classList.contains(gender.value)){
-                        item.classList.add('hidden')
+                        item.classList.add('hidden');
+                        document.querySelector('main h1').classList.remove('show');
                     } else {
                         item.classList.remove('hidden'); //in case it was previously hidden
+                        document.querySelector('main h1').classList.remove('show');
                     }
                     noResults();
                 });
@@ -113,6 +114,7 @@ window.onload = () => {
         ages.forEach(function (age) {
             age.addEventListener("change", function(){
                 dataSort(age.value, 'age');
+                document.querySelector('main h1').classList.remove('show');
             });
         });
 
@@ -120,6 +122,7 @@ window.onload = () => {
         names.forEach(function (name) {
             name.addEventListener("change", function(){
                 dataSort(name.value, 'last');
+                document.querySelector('main h1').classList.remove('show');
             });
         });
 

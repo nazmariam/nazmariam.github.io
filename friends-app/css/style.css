@@ -1,5 +1,7 @@
 html{
     height: 100%;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
 }
 body{
     min-height: 100%;
@@ -29,14 +31,13 @@ main h1 {
 main h1.show{
     width: 100%;
 }
-aside{
-
-}
-
 aside.filters{
     padding: 20px;
     min-width: 200px;
     max-width: 200px;
+    border-left: 2px solid #83ba43;
+    border-bottom: 2px solid #83ba43;
+    color: #000;
 }
 form {
     margin: 8px;
@@ -110,16 +111,48 @@ fieldset{
     transform: rotateY(180deg);
 }
 .flip-container .back{
-    background-color: #83ba43;
     padding: 8px;
     box-sizing: border-box;
+    background-color: #83ba43;
+    font-size: 16px;
+    text-transform: capitalize;
 }
 label{
     display: inline-block;
-    border: 1px solid grey;
+    border: 1px solid #83ba43;
     padding: 4px 8px;
     cursor: pointer;
+    border-radius: 4px;
 }
 input[type="radio"]{
     display: none;
+}
+input[type="submit"],
+#reset{
+    background-color: #fff;
+    padding: 4px 8px;
+    border: 1px solid #83ba43;
+    font-size: 14px;
+    border-radius: 4px;
+}
+input[type="submit"]:hover,
+#reset:hover{
+    background-color: #83ba43;
+}
+label img{
+    width: 26px;
+}
+#name-search{
+    padding: 4px 8px;
+    border: 1px solid #83ba43;
+    margin: 0 0 8px 0;
+}
+#reset{
+    margin: 4px 8px;
+}
+label:hover{
+    background-color: #83ba43;
+}
+input[type="radio"]:checked+label {
+    background-color: #83ba43;
 }
