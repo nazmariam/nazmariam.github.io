@@ -31,8 +31,6 @@ Enemy.prototype.update = function(dt) {
     }
 };
 Enemy.prototype.render = function() {
-    // if(this.x >= FIELD.w)
-    //     this.x = -STEP.x;
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 Enemy.prototype.isCollision = function(){
