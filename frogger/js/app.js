@@ -22,30 +22,24 @@ let Enemy = function(x,y,speed, gamer) {
 };
 Enemy.prototype.update = function(dt) {
     this.x += dt*this.speed;
-
-    if (this.checkCollision()){
+    if(this.x >= FIELD.w)
+        this.x = -STEP.x;
+    if (this.isCollision()){
         alert("You loose");
         this.gamer.x = START.x;
         this.gamer.y = START.y;
     }
 };
 Enemy.prototype.render = function() {
-    if(this.x >= FIELD.w)
-        this.x = -STEP.x;
+    // if(this.x >= FIELD.w)
+    //     this.x = -STEP.x;
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-Enemy.prototype.checkCollision = function(){
+Enemy.prototype.isCollision = function(){
 
-    if (
-       this.gamer.x < this.x + STEP.x/2 &&
-        this.gamer.x + STEP.x/2 > this.x &&
-        this.gamer.y < this.y + STEP.y/4 &&
-        this.gamer.y + STEP.y/4 > this.y
-    ) {
-        return true;
-    } else {
-        return false;
-    }
+   return this.gamer.x < this.x + STEP.x/2 && this.gamer.x + STEP.x/2 > this.x &&
+          this.gamer.y < this.y + STEP.y/4 && this.gamer.y + STEP.y/4 > this.y
+
 };
 let Player = function(){
     this.sprite = 'images/char-boy.png';
