@@ -6,7 +6,7 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
 function style() {
-    return gulp.src('app/sass/main.sass')
+    return gulp.src('app/sass/main.scss')
         .pipe(sass())
         .pipe(rename({
             suffix: '.min'
