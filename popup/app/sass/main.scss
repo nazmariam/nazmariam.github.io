@@ -1,9 +1,7 @@
-/*Style for the first level menu bar*/
 body{
   font-family: arial, sans-serif;
   font-size: 13px;
 }
-
 ul#menu{
   position: absolute;
   top: 8px;
@@ -15,27 +13,29 @@ ul#menu{
   >li{
     float:left;
     list-style-type:none;
-    //position:relative;
     margin: 0 10px;
     &:nth-last-child(2) {
-      background: #000000de url(../images/sprite.png) 23px 865px;
-      width: 20px;
-      height: 20px;
-      opacity: .65;
-      border-radius: 50%;
-      cursor: pointer;
-      &:hover{
-        opacity: 1;
+      a{
+        background: #000000de url(../images/sprite.png) 23px 865px;
+        width: 20px;
+        height: 20px;
+        opacity: .65;
+        border-radius: 50%;
+        display: block;
+        &:hover{
+          opacity: 1;
+        }
       }
     }
-
     &:nth-last-child(1) {
-      background: url("../images/avatar.jpg");
-      background-size: contain;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      cursor: pointer;
+      a{
+        background: url("../images/avatar.jpg");
+        background-size: contain;
+        display: block;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+      }
     }
 
     a{
@@ -48,10 +48,8 @@ ul#menu{
         color: inherit;
       }
     }
-
   }
 }
-
 label{
   position: relative;
   display: block;
@@ -63,23 +61,37 @@ label{
   &:hover{
     opacity: 1;
   }
+  .close-mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: none;
+  }
 }
 
-input:checked ~ label:after{
-  border-top:0 solid rgba(255,255,255,.5);
-  border-bottom:4px solid rgba(255,255,255,.5);
-  transition:border-top .1s, border-bottom .1s .1s;
+input{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(1px,1px,1px,1px);
 }
 
-/*hide the inputs*/
-input{display:none}
-
-/*show the second levele menu of the selected voice*/
 input:checked ~ .wrapper {
   display: block;
 }
-
-/*style for the second level menu*/
+input#check01:focus ~ label {
+  outline: 2px solid #4d90fe;
+}
+input#check01 + label > .close-mask {
+  display: block;
+}
 .wrapper{
   position: absolute;
   background: #fff;
@@ -106,7 +118,6 @@ input:checked ~ .wrapper {
     background-color: white;
     transform: rotate(-45deg);
   }
-
 }
 ul.submenu{
   list-style-type: none;
@@ -131,7 +142,6 @@ ul.submenu{
         margin: 5px 0 9px;
       }
     }
-
     &:nth-child(2) a:before{
       background: url(../images/sprite.png) 92px 936px;
     }
@@ -179,18 +189,13 @@ ul.submenu{
         height: 64px;
         content: "";
       }
-      span{
-
-
-      }
     }
-  &:hover a{
-    border: 1px solid #e5e5e5;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    margin: -1px;
-  }
-
+    &:hover a{
+      border: 1px solid #e5e5e5;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      margin: -1px;
+    }
   }
   .show-more{
     width: 100%;
@@ -200,11 +205,12 @@ ul.submenu{
     color: rgba(0,0,0,0.87);
     opacity: 1;
   }
+
   #toggle-more:checked ~ .hidden-icons{
     display: flex;
   }
   #toggle-more:checked ~ span{
-    border-top: 1px solid rgba(0,0,0,.2);;
+    border-top: 1px solid rgba(0,0,0,.2);
     display: block;
     width:80%;
     height: 1px;
@@ -212,7 +218,10 @@ ul.submenu{
   }
   #toggle-more:checked ~ .show-more{
    display: none;
-
+  }
+  input#toggle-more:focus ~ .show-more {
+    outline: 2px solid #4d90fe;
+    margin: 0 2px 2px;
   }
   .hidden-icons{
     display: none;
@@ -231,30 +240,23 @@ ul.submenu{
       }
       &:nth-child(2) a:before {
         background: url(../images/sprite.png) 76px 1664px;
-
       }
       &:nth-child(3) a:before {
         background: url(../images/sprite.png) 92px 2740px;
-
       }
       &:nth-child(4) a:before {
         background: url(../images/sprite.png) 92px 1317px;
-
       }
       &:nth-child(5) a:before {
         background: url(../images/sprite.png) 92px 1005px;
-
       }
       &:nth-child(6) a:before {
         background: url(../images/sprite.png) 92px 2185px;
-
       }
       &:nth-child(7) a:before {
         background: url(../images/sprite.png) 92px 447px;
-
       }
     }
   }
-
 }
 
