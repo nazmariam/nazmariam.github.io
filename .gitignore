@@ -43,5 +43,4 @@ Temporary Items
 .apdisk
 /.idea
 /popup/node_modules/
-/google popup/node_modules/
-*/node_modules
+/google_popup/node_modules/

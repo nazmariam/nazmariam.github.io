@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="519f60ba-13dc-4972-b969-6860a6e6ce88" name="Default Changelist" comment="" />
+    <list default="true" id="519f60ba-13dc-4972-b969-6860a6e6ce88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/google_popup/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/google_popup/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/app/images/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/app/images/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/app/images/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/app/images/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/app/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/app/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/dist/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/dist/images/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/dist/images/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/dist/images/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/dist/images/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google popup/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/google_popup/package.json" afterDir="false" />
+    </list>
     <list id="05bd245f-81e0-4da3-a5e6-64a73d178ac9" name="Revert &quot;DOM done&quot;" comment="Revert &quot;DOM done&quot;&#10;&#10;This reverts commit 40e4923e" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="196">
+              <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -116,11 +131,11 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="96" />
-    <option name="y" value="62" />
-    <option name="width" value="1241" />
-    <option name="height" value="668" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="205" />
+    <option name="y" value="481" />
+    <option name="width" value="1161" />
+    <option name="height" value="630" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -137,32 +152,7 @@
             <path>
               <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="custom-search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="popup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="popup" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="popup" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nazmariam.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nazmariam.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="popup" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="post-oop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -232,18 +222,18 @@
       <workItem from="1549102273711" duration="4525000" />
       <workItem from="1549119231776" duration="6176000" />
       <workItem from="1549203425092" duration="539000" />
-      <workItem from="1549299359312" duration="291000" />
+      <workItem from="1549299359312" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149806000" />
+    <option name="totallyTimeSpent" value="150100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="7" />
     <layout>
       <window_info id="Gulp" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21787709" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21787709" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -256,7 +246,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38110748" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38110748" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -507,8 +497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="196">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
         </state>
       </provider>
     </entry>
