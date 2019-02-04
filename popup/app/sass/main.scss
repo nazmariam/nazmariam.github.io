@@ -77,24 +77,18 @@ input{display:none}
 /*show the second levele menu of the selected voice*/
 input:checked ~ .wrapper {
   display: block;
-  transition:max-height 0.5s ease-in;
 }
 
 /*style for the second level menu*/
 .wrapper{
   position: absolute;
   background: #fff;
-  transition: max-height .5s ease-out;
-  //overflow: hidden;
   right: 8px;
   top: 44px;
   -webkit-animation: gb__a .2s;
   animation: gb__a .2s;
   -webkit-border-radius: 2px;
-  //min-height: 196px;
-
   width: 320px;
-  //max-height: 548px;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px #ccc;
   border-radius: 2px;
@@ -116,13 +110,14 @@ input:checked ~ .wrapper {
 }
 ul.submenu{
   list-style-type: none;
-  overflow-y: auto;
+  overflow: overlay;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   align-items: center;
   justify-content: center;
+  max-height: 455px;
   li {
     display: block;
     &:nth-child(1) a{
@@ -183,7 +178,6 @@ ul.submenu{
         width: 64px;
         height: 64px;
         content: "";
-        //margin: 0 0 4px;
       }
       span{
 
@@ -214,7 +208,7 @@ ul.submenu{
     display: block;
     width:80%;
     height: 1px;
-    margin: 10px 0;
+    margin: 12px 0;
   }
   #toggle-more:checked ~ .show-more{
    display: none;
@@ -223,6 +217,43 @@ ul.submenu{
   .hidden-icons{
     display: none;
     flex-wrap: wrap;
+    padding: 0 16px;
+    a{
+      padding: 12px;
+    }
+    li{
+      &:nth-child(1) a:before{
+        background: url(../images/sprite.png) 92px 2116px;
+        border-radius: unset;
+        width: 64px;
+        height: 64px;
+        margin: auto;
+      }
+      &:nth-child(2) a:before {
+        background: url(../images/sprite.png) 76px 1664px;
+
+      }
+      &:nth-child(3) a:before {
+        background: url(../images/sprite.png) 92px 2740px;
+
+      }
+      &:nth-child(4) a:before {
+        background: url(../images/sprite.png) 92px 1317px;
+
+      }
+      &:nth-child(5) a:before {
+        background: url(../images/sprite.png) 92px 1005px;
+
+      }
+      &:nth-child(6) a:before {
+        background: url(../images/sprite.png) 92px 2185px;
+
+      }
+      &:nth-child(7) a:before {
+        background: url(../images/sprite.png) 92px 447px;
+
+      }
+    }
   }
 
 }
