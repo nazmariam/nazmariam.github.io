@@ -51,15 +51,18 @@ ul#menu{
   }
 }
 label{
-  position: relative;
-  display: block;
-  cursor: pointer;
-  background: url(../images/sprite.png) 86px 1031px;
-  width: 17px;
-  height: 17px;
-  opacity: 0.65;
-  &:hover{
-    opacity: 1;
+
+  .button-icon{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background: url(../images/sprite.png) 86px 1031px;
+    width: 17px;
+    height: 17px;
+    opacity: 0.65;
+    &:hover{
+      opacity: 1;
+    }
   }
   .close-mask{
     position: fixed;
@@ -71,7 +74,6 @@ label{
     display: none;
   }
 }
-
 input{
   position: absolute;
   width: 1px;
@@ -86,10 +88,10 @@ input{
 input:checked ~ .wrapper {
   display: block;
 }
-input#check01:focus ~ label {
+.button-popup:focus ~ label .button-icon {
   outline: 2px solid #4d90fe;
 }
-input#check01 + label > .close-mask {
+.button-popup:checked + label > .close-mask {
   display: block;
 }
 .wrapper{
@@ -206,20 +208,20 @@ ul.submenu{
     opacity: 1;
   }
 
-  #toggle-more:checked ~ .hidden-icons{
+  .button-more:checked ~ .hidden-icons{
     display: flex;
   }
-  #toggle-more:checked ~ span{
+  .button-more:checked ~ span{
     border-top: 1px solid rgba(0,0,0,.2);
     display: block;
     width:80%;
     height: 1px;
     margin: 12px 0;
   }
-  #toggle-more:checked ~ .show-more{
+  .button-more:checked ~ .show-more{
    display: none;
   }
-  input#toggle-more:focus ~ .show-more {
+  .button-more:focus ~ .show-more {
     outline: 2px solid #4d90fe;
     margin: 0 2px 2px;
   }
