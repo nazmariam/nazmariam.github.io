@@ -2,8 +2,15 @@ document.querySelector("form").addEventListener("submit", function(event){
     event.preventDefault();
     let searchValue = event.target.elements[0].value;
     search(searchValue);
+    console.log();
 });
-
+document.getElementById('rt').addEventListener('click', function (event){
+	console.log('szxdgxcfgvhj');
+	let searchValue = document.getElementById('search').value;
+	console.log(searchValue);
+	search(searchValue);
+	// window.location.replace("https://www.google.com/doodles/");
+});
 let myData=[];
 function search(searchString){
     searchString = searchString.toLowerCase();
