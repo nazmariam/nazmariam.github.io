@@ -24,11 +24,11 @@ function search(searchString){
 function showSearchResults(response) {
 	let ul = document.createElement("ul");
 	let all = response.items;
-	all.forEach(function(val){
+	if(all){all.forEach(function(val){
 		let li = document.createElement("li");
 		li.innerHTML = ('<h3><a href="' + val.link + '">' + val.title + '</a></h3><p class="siteURL">' + val.displayLink + '</p><p class="content">' + val.htmlSnippet + '</p>');
 		ul.appendChild(li);
-	});
+	})}else{ul.innerHTML = "<h4>Nothing found</h4>"}
 	let result = document.querySelector(".result");
 	result.innerHTML = '';
 	result.appendChild(ul);
