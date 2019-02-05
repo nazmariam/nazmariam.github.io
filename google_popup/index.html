@@ -45,10 +45,8 @@
                                 <li ><a href="#"><span>Classroom</span></a></li>
                                 <li ><a href="#"><span>Earth</span></a></li>
                             </ul>
-
                         </ul>
                     </div>
-                    <!--</a>-->
                 </li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
@@ -56,10 +54,21 @@
         </nav>
     </header>
     <main>
-        <section class="search">
-
+        <section class="search-form">
+            <form id="google-search" name="google-search">
+                <div class="search-block">
+                    <a href="https://www.google.com.ua/"> <img height="92px" src="dist/images/googlelogo.png" width="272px" id="hplogo" alt="Google" title="Google" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"></a>
+                    <div class="search-line">
+                        <input type="text" name="search" id="search" placeholder="" class="searching-input"/>
+                        <span class="search-mic"></span>
+                    </div>
+                </div>
+                <input type="submit" class="button" value="Google Search"/>
+                <input type="button" class="button" value="I'm feeling lucky"/>
+            </form>
         </section>
-        <section class="content"></section>
+        <section class="result"></section>
     </main>
+<script src="dist/scripts/script.js"></script>
 </body>
 </html>
