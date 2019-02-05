@@ -1,17 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>Google  Web Search API Sample</title>
+    <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <title>JSON Custom Search API Example</title>
-
 </head>
 <body>
-<div id="content">
-    <form>
-        <input type="text" name="search" id="search" value="">
-        <input type="submit" value="Search">
-    </form>
-
+<main>
+    <section class="search-form">
+        <form id="google-search" name="google-search">
+            <div class="search-block">
+                <a href="https://www.google.com.ua/"> <img height="92px" src="images/googlelogo.png" width="272px" id="hplogo" alt="Google" title="Google" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)"></a>
+                <div class="search-line">
+                    <input type="text" name="search" id="search" placeholder=""/>
+                    <span class="search-mic"></span>
+                </div>
+            </div>
+            <input type="submit" class="button" value="Google Search"/>
+            <input type="button" class="button" value="I'm feeling lucky"/>
+        </form>
+    </section>
+    <section class="result"></section>
+</main>
 <script src="scripts/script.js"></script>
-<!--<script src="https://www.googleapis.com/customsearch/v1?key=AIzaSyBS3H2dT37lO8RSEXjFkIC3g1cJNPdg8z4&cx=017576662512468239146:omuauf_lfve&q=cars&callback=hndlr">-->
-<!--</script>-->
 </body>
 </html>
