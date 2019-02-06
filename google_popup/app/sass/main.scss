@@ -1,6 +1,6 @@
 @import url('reset.scss');
 @import url('search.scss');
-$google_color: rgba(0,0,0,.87);
+$google_color: rgba(0,0,0,0.87);
 body{
   font-family: arial, sans-serif;
   font-size: 13px;
@@ -44,7 +44,6 @@ body{
     .submenu-link{
       text-decoration: none;
       color: $google_color;
-
       &:visited{
         color: inherit;
       }
@@ -179,7 +178,7 @@ body{
       flex-direction: column;
       align-items: center;
       padding:12px;
-      color:#ddd;
+      color:$google_color;
       text-decoration:none;
       transition:background .3s;
       white-space:nowrap;
