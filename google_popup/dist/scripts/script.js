@@ -74,7 +74,6 @@ function showSearchResults(response) {
 	document.querySelector('.search-form').classList.add('full-height');
 }
 function showFirstResult(response) {
-	let ul = document.createElement("ul");
 	let all = response.items;
 	if(all){
         window.location.replace(all[1].link);
