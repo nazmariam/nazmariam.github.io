@@ -315,8 +315,8 @@ fieldset {
 
 .order-list {
   display: flex;
-  padding: 0;
-  justify-content: space-around; }
+  padding: 0 0 0 28px;
+  justify-content: space-between; }
 
 .order-item {
   display: flex;
@@ -1054,8 +1054,6 @@ footer {
     height: 16px; }
   .second-area {
     margin: 24px 0; }
-  .to-lang .list-header {
-    padding-left: 0; }
   .sel-but {
     display: inline-block; }
   .second-lang {
@@ -1068,7 +1066,7 @@ footer {
     margin: 0;
     display: inline-block; }
   .to-lang .list-header {
-    padding-left: 20px; }
+    padding-left: 16px; }
   .fourth-fifth {
     flex-direction: column; }
   .fourth-area .container {
@@ -1138,12 +1136,50 @@ footer {
   .from-lang .list-header,
   .to-lang .list-header {
     width: 35px; }
+  .from-lang, .to-lang {
+    margin: 0 0 0 -40px; }
   .second-lang .sel-but {
-    margin-left: 23px; }
+    margin-left: 26px;
+    margin-right: 8px; }
   .order-list {
     flex-wrap: wrap; }
   .order-item {
-    margin: 0 16px; } }
+    margin: 0 16px; }
+  .sel-but {
+    display: inline-block;
+    width: 88%; }
+  .add {
+    width: 88%;
+    margin: 0 0 0 67px; }
+  .fourth-fieldset {
+    width: 100%;
+    margin: unset; }
+  .fourth-area .container {
+    padding: 8px 40px; }
+  .fourth-area .type-label {
+    width: 100%; }
+  .type-button {
+    width: 100%; }
+  .signin {
+    text-align: center; }
+  .sixth-area .container {
+    padding: 16px 40px; }
+  .username, .email-address, .users-password {
+    width: 100%;
+    margin: 0; }
+  .text, .email, .password, .code, .card-number, .date {
+    width: 100%; }
+  .payment-fieldset {
+    width: 100%; }
+  .payment-card {
+    width: 100%; }
+  .card-date {
+    width: 77%;
+    margin-right: 2%; }
+  .card-code {
+    width: 20%; }
+  .date {
+    max-width: 100%; } }
 
 @media only screen and (max-width: 520px) {
   .header-container {
@@ -1155,13 +1191,16 @@ footer {
     flex-wrap: wrap; }
   .third-area .container {
     padding: 16px 4px; }
+  .from-lang, .to-lang {
+    margin: 0; }
+  .to-lang .list-header {
+    padding-left: 0px; }
   .second-lang {
     margin: 0; }
-  .second-lang-block {
-    flex-direction: row-reverse;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+  .second-lang .sel-but {
+    margin-left: 40px;
+    margin-right: 0;
+    width: 80%; }
   .fourth-area .container {
     padding: 8px 16px; }
   .signin {
@@ -1170,14 +1209,33 @@ footer {
     padding: 4px; }
   .username, .email-address, .users-password {
     margin: 4px; }
-  .title-number {
-    padding: 5px 12px; }
-  .main-title {
-    margin: 32px 4px; }
   .add, .from-lang, .first-lang-block, .second-lang-block {
-    display: flex; }
-  .second-lang .sel-but {
-    margin-left: 8px; } }
+    text-align: left; }
+  .add {
+    width: 290px;
+    margin-left: 39px;
+    text-align: center; }
+  .third-area .second-lang {
+    width: 93%;
+    position: relative; }
+  .sel-but {
+    width: 80%; }
+  .sixth-area .container {
+    padding: 8px; }
+  .card-date {
+    width: 75%; }
+  .payment-fieldset {
+    width: 98%; }
+  .text, .email, .password, .code, .card-number, .date {
+    width: 98%; }
+  .second-lang-block {
+    position: relative;
+    display: block;
+    overflow: hidden; }
+  .third-area .del {
+    position: absolute;
+    right: 10px;
+    top: 18px; } }
 
 @media (min-width: 768px) {
   .form-container {
