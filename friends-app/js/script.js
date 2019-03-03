@@ -20,6 +20,7 @@ window.onload = () => {
                 console.log("Oops! Looks like there is a problem");
         });
     }
+
     function createUserCard(profile){
         let fragment = document.createDocumentFragment();
         let user = document.createElement("div");
