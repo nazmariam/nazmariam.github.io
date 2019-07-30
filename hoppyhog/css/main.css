@@ -709,6 +709,10 @@ body {
     font-size: 12px; }
 
 @media only screen and (max-width: 500px) {
+  .fixed-header .wrapper {
+    padding: 0; }
+    .fixed-header .wrapper .main-nav__item a {
+      margin: 16px 5px; }
   .description {
     columns: auto; }
   .sorts {
@@ -793,7 +797,8 @@ body {
       height: 120px; }
   .form-screen .credentials {
     max-width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-top: 32px; }
   .form-screen .about-button {
     width: 100%; }
   .form-screen .socials {
