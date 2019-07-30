@@ -365,7 +365,8 @@ body {
   padding-bottom: 120px; }
   .sorts .sort-box {
     display: inline-block;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    cursor: pointer; }
     .sorts .sort-box img {
       max-width: max-content; }
     .sorts .sort-box span {
