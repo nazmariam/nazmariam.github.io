@@ -306,7 +306,7 @@ body {
   top: 50%;
   left: 50%;
   margin-left: -687px;
-  margin-top: calc(-50vh + 154px); }
+  margin-top: calc(calc(var(--vh, 1vh) * (-50)) + 154px); }
 
 .slogan {
   font-family: Guerilla, sans-serif;
