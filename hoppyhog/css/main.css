@@ -406,10 +406,16 @@ body {
   letter-spacing: -6px;
   color: #1f1e22;
   line-height: 95px; }
-  .fact-numeric sup {
-    font-size: 74px;
-    top: -29px;
-    left: 4px; }
+
+.fact-sup {
+  font-family: 'Gobold',sans-serif;
+  font-size: 95px;
+  font-weight: 100;
+  letter-spacing: -6px;
+  color: #1f1e22;
+  font-size: 74px;
+  top: -29px;
+  left: 4px; }
 
 .fact-numeric-txt {
   display: block;
