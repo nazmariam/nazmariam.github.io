@@ -30,5 +30,7 @@ $(window).scroll(function () {
             scroller = false;
         }
     }
-})
+});
 // бегущие цифры по скролу end ------------
+//  dot nav
+

@@ -286,6 +286,22 @@ body {
       background-color: #fff;
       border-radius: 50%;
       margin: 16px 16px; }
+      .main-nav ul .main-nav__item a:active {
+        background-attachment: red; }
+
+nav#dot-nav {
+  position: fixed;
+  right: 8px;
+  top: 48px; }
+  nav#dot-nav a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: block;
+    margin: 10px; }
+    nav#dot-nav a.active {
+      background: #fff; }
 
 .front-screen {
   height: 100vh;
