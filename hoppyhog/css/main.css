@@ -553,7 +553,7 @@ body {
 .gallery {
   column-count: 4;
   column-gap: 4px; }
-  .gallery img {
+  .gallery img, .gallery video {
     width: 100%; }
 
 .insta-link {
