@@ -248,7 +248,7 @@ body {
     top: 0;
     left: -50vw;
     z-index: -1;
-    background: url(../images/bg-hog.png) 50% calc(50vh - 150px) no-repeat;
+    background: url(../images/bg-hog-.png) 50% calc(-50vh - 150px) no-repeat;
     background-size: auto;
     transform: rotate(var(--angle)); }
 
@@ -753,7 +753,7 @@ nav#dot-nav {
     width: 400vw;
     height: 400vh;
     left: -150vw;
-    background: url(../images/bg-hog.png) 50% calc(50vh - 118px) no-repeat;
+    background: url(../images/bg-hog-.png) 50% -120px no-repeat;
     background-size: contain;
   }
   .description {
