@@ -248,7 +248,7 @@ body {
     top: 0;
     left: -50vw;
     z-index: -1;
-    background: url(../images/bg-hog-.png) 50% calc(-50vh - 150px) no-repeat;
+    background: url(../images/bg-hog-2.png) 50% calc(-50vh - 150px) no-repeat;
     background-size: auto;
     transform: rotate(var(--angle));
     color: #333;
@@ -262,7 +262,7 @@ body {
   left: 0;
   position: fixed;
   right: 0;
-  top: 44vh;
+  top: 22%;
   z-index: -1;
   overflow-y: hidden; }
 
@@ -305,7 +305,7 @@ body {
 /* ANIMATIONS */
 .x1 {
   animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 40%;
+  left: 41%;
   top: 5%;
   transform: scale(0.6); }
 
@@ -313,7 +313,7 @@ body {
   -webkit-animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
   -moz-animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
   animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 28%;
+  left: 56%;
   top: 80%;
   -webkit-transform: scale(0.4);
   -moz-transform: scale(0.4);
@@ -323,7 +323,7 @@ body {
   -webkit-animation: animateBubble 19s linear infinite, sideWays 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 19s linear infinite, sideWays 2s ease-in-out infinite alternate;
   animation: animateBubble 19s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 32%;
+  left: 64%;
   top: 40%;
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
@@ -333,7 +333,7 @@ body {
   -webkit-animation: animateBubble 18s linear infinite, sideWays 3s ease-in-out infinite alternate;
   -moz-animation: animateBubble 18s linear infinite, sideWays 3s ease-in-out infinite alternate;
   animation: animateBubble 18s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 54%;
+  left: 35%;
   top: 0;
   -webkit-transform: scale(0.3);
   -moz-transform: scale(0.3);
@@ -343,7 +343,7 @@ body {
   -webkit-animation: animateBubble 17s linear infinite, sideWays 4s ease-in-out infinite alternate;
   -moz-animation: animateBubble 17s linear infinite, sideWays 4s ease-in-out infinite alternate;
   animation: animateBubble 17s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 60%;
+  left: 69%;
   top: 50%;
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
@@ -353,7 +353,7 @@ body {
   -webkit-animation: animateBubble 14s linear infinite, sideWays 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 14s linear infinite, sideWays 2s ease-in-out infinite alternate;
   animation: animateBubble 14s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 64%;
+  left: 29%;
   top: 0;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -363,7 +363,7 @@ body {
   -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
   animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 65%;
+  left: 28%;
   top: 70%;
   -webkit-transform: scale(0.4);
   -moz-transform: scale(0.4);
@@ -373,7 +373,7 @@ body {
   -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
   -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
   animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 49%;
+  left: 46%;
   top: 10%;
   -webkit-transform: scale(0.3);
   -moz-transform: scale(0.3);
@@ -383,7 +383,7 @@ body {
   -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
   -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
   animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 40%;
+  left: 64%;
   top: 50%;
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -393,7 +393,7 @@ body {
   -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
   animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 54%;
+  left: 52%;
   top: 80%;
   -webkit-transform: scale(0.3);
   -moz-transform: scale(0.3);
@@ -928,31 +928,31 @@ nav#dot-nav {
     height: 400vh;
     left: -150vw;
     top: -150vh;
-    background: url(../images/bg-hog-.png) center center no-repeat;
+    background: url(../images/bg-hog-2.png) center center no-repeat;
     background-size: contain;
     transition: 0.05s ease-in-out; }
   #background-wrap {
     top: 50%; }
   .x1 {
-    left: 49%; }
+    left: 47%; }
   .x2 {
-    left: 53%; }
+    left: 49%; }
   .x3 {
-    left: 48%; }
+    left: 51%; }
   .x4 {
-    left: 50%; }
+    left: 52%; }
   .x5 {
-    left: 49%; }
-  .x6 {
-    left: 49%; }
-  .x7 {
-    left: 46%; }
-  .x8 {
-    left: 49%; }
-  .x9 {
-    left: 46%; }
-  .x10 {
     left: 48%; }
+  .x6 {
+    left: 46%; }
+  .x7 {
+    left: 52%; }
+  .x8 {
+    left: 47%; }
+  .x9 {
+    left: 50%; }
+  .x10 {
+    left: 53%; }
   .description {
     columns: auto; }
   .sorts {
