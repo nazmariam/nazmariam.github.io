@@ -441,8 +441,8 @@
             window.addEventListener('deviceorientation', rotateBeer);
         // }
         function rotateBeer(evt) {
-
-            hog.style.setProperty('--angle', ((-evt.gamma/2>=-45) && (-evt.gamma/2<=45)?-evt.gamma/2: (-evt.gamma/2<-45)?-45:45) +'deg');
+            let angle = (-evt.gamma/2<-45)?-45:(-evt.gamma/2>45)?45:-evt.gamma/2;
+            hog.style.setProperty('--angle', angle +'deg');
         }
     </script>
     <script src="js/script.js"></script>
