@@ -441,7 +441,7 @@
         // }
         function rotateBeer(evt) {
 
-            hog.style.setProperty('--angle', ((-evt.gamma>=-15) && (-evt.gamma<=15)?-evt.gamma/2: (-evt.gamma<-15)?-15:15) +'deg');
+            hog.style.setProperty('--angle', ((-evt.alpha>=-15) && (-evt.alpha<=15)?-evt.alpha: (-evt.alpha<-15)?-15:15) +'deg');
         }
     </script>
     <script src="js/script.js"></script>
