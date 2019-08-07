@@ -749,6 +749,11 @@ nav#dot-nav {
     padding: 0; }
     .fixed-header .wrapper .main-nav__item a {
       margin: 16px 5px; }
+  .beer-hog-before {
+    width: 400vw;
+    height: 400vh;
+    left: -168vw;
+    background: url(../images/bg-hog.png) 50% calc(50vh - 118px) no-repeat; }
   .description {
     columns: auto; }
   .sorts {
