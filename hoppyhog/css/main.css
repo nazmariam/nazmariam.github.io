@@ -238,7 +238,7 @@ body {
   position: relative;
   overflow: hidden; }
   .beer-hog::before {
-    --ungle: 0deg;
+    --angle: 0deg;
     content: "";
     position: absolute;
     width: 200vw;
@@ -248,7 +248,7 @@ body {
     z-index: -1;
     background: url(../images/bg-hog.png) 50% calc(50vh - 150px) no-repeat;
     background-size: auto;
-    transform: rotate(var(--ungle)); }
+    transform: rotate(var(--angle)); }
 
 .wrapper {
   width: 100%;

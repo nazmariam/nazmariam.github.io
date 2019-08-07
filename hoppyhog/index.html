@@ -410,7 +410,7 @@
 <!--    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>-->
     <script src="js/jquery.fancybox.min.js"></script>
     <script>
-        // // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
         let vh = window.innerHeight * 0.01;
         // Then we set the value in the --vh custom property to the root of the document
         document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -433,7 +433,7 @@
             window.addEventListener('deviceorientation', rotateBeer);
         }
         function rotateBeer(evt) {
-            hog.style.setProperty('--ungle', -evt.gamma+'deg')
+            hog.style.setProperty('--angle', Math.trunc(-evt.gamma)*10+'deg')
         }
     </script>
     <script src="js/script.js"></script>
