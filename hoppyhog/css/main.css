@@ -753,8 +753,7 @@ nav#dot-nav {
     width: 400vw;
     height: 400vh;
     left: -150vw;
-    top: -150vh;
-    background: url(../images/bg-hog-.png) center center no-repeat;
+    background: url(../images/bg-hog-.png) 50% -120px no-repeat;
     background-size: contain;
   }
   .description {
