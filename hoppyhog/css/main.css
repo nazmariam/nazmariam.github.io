@@ -232,11 +232,22 @@ table {
   src: url("../fonts/besom/Besom.ttf") format("truetype"); }
 
 body {
-  background: #00181f url(../images/bg-hog.png) 50% calc(50vh - 150px) no-repeat;
-  background-size: auto;
-  font-family: Cambria, sans-serif;
-  font-size: 16px;
-  color: #fff; }
+  background: #00181f; }
+
+.beer-hog {
+  position: relative;
+  overflow: hidden; }
+  .beer-hog::before {
+    content: "";
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    top: 0;
+    left: -50vw;
+    z-index: -1;
+    background: url(../images/bg-hog.png) 50% calc(50vh - 150px) no-repeat;
+    background-size: auto;
+    transform: rotate(0deg); }
 
 .wrapper {
   width: 100%;
