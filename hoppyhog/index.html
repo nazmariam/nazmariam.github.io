@@ -436,12 +436,13 @@
     </script>
     <script>
         let hog = document.getElementById('hog');
-        // console.log(hog);
+        console.log(hog);
         // if (window.DeviceOrientationEvent) {
             window.addEventListener('deviceorientation', rotateBeer);
         // }
         function rotateBeer(evt) {
-            hog.style.setProperty('--angle', evt.gamma +'deg');
+
+            hog.style.setProperty('--angle', ((-evt.gamma>=-6) && (-evt.gamma<=6)?-evt.gamma: (-evt.gamma<-6)?-6:6) +'deg');
         }
     </script>
     <script src="js/script.js"></script>
