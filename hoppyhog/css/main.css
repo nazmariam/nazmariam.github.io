@@ -749,7 +749,7 @@ nav#dot-nav {
     padding: 0; }
     .fixed-header .wrapper .main-nav__item a {
       margin: 16px 5px; }
-  .beer-hog-before {
+  .beer-hog .beer-hog-before {
     width: 400vw;
     height: 400vh;
     left: -168vw;
