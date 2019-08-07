@@ -756,7 +756,7 @@ nav#dot-nav a.active {
     top: -150vh;
     background: url(../images/bg-hog-.png) center center no-repeat;
     background-size: contain;
-    transition: 0.1s ease-in-out;
+    transition: 0.05s ease-in-out;
   }
   .description {
     columns: auto; }
