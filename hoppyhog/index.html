@@ -433,8 +433,7 @@
             window.addEventListener('deviceorientation', rotateBeer);
         }
         function rotateBeer(evt) {
-            hog.innerHTML = evt.gamma;
-            hog.style.setProperty('transform', 'rotate('+evt.gamma+'deg)');
+            hog.style.setProperty('--ungle', -evt.gamma+'deg')
         }
     </script>
     <script src="js/script.js"></script>
