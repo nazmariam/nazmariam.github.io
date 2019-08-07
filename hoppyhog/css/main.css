@@ -235,10 +235,12 @@ body {
   background: #00181f; }
 
 .beer-hog {
-  position: relative;
-  overflow: hidden; }
-  .beer-hog::before {
-    --angle: 0deg;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 200vh; }
+  .beer-hog .beer-hog-before {
+    --angle: 4deg;
     content: "";
     position: absolute;
     width: 200vw;
