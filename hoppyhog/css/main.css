@@ -243,12 +243,10 @@ body {
     --angle: 0deg;
     content: "";
     position: absolute;
-    width: 200vw;
-    height: 200vh;
-    top: 0;
-    left: -50vw;
+    width: 2600px;
+    height: 1480px;
     z-index: -1;
-    background: url(../images/bg-hog-2.png) 50% calc(-50vh - 150px) no-repeat;
+    background: url(../images/bg-hog-2.png) calc(-1300px + 50vw) calc(-740px + 50vh) no-repeat;
     background-size: auto;
     transform: rotate(var(--angle));
     color: #333;
@@ -471,11 +469,9 @@ body {
       display: block;
       width: 8px;
       height: 8px;
-      background-color: #fff;
+      background-color: transparent;
       border-radius: 50%;
       margin: 16px 16px; }
-      .main-nav ul .main-nav__item a:active {
-        background-attachment: red; }
 
 nav#dot-nav {
   position: fixed;
