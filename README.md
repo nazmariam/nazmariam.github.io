@@ -1,7 +1,9 @@
 ﻿# nazmariam.github.io
 
-embed
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2Z__VqJZbXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+First workshop HTML5 Form (1/2) - Yevhen Orlov
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=4MYA3Nocsts
+" target="_blank"><img src="http://img.youtube.com/vi/4MYA3Nocsts/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="480" height="360" border="8" /></a>
 
 
 
