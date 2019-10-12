@@ -42,3 +42,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
         e.target.classList.add("active");
     });
 });
+Function.prototype.myBind = function(context,args){
+    let func = this;
+    return function(){
+        return func.apply(context,args)
+    }
+};
+
+let user = {
+    name: 'Dolly',
+    sayHi(){return console.log('Hi, '+this.name)}
+};
+
+let me = {name: 'Mary',
+    say:user.sayHi};
+
+me.say();
+
+
+
+const curry = fn => {
+    let args = [];
+    const func = (...args2) => {
+        args = [...args, ...args2];
+        return func
+    };
+
+    func.toString = func.valueOf = () => fn(...args)
+    return func
+};
+
+const add = (...args) => args.reduce((a,b) => a+b)
+
+const curring = curry(add)
+
+console.log(curring(1)(2)(3)(10)(10))
+console.log(curring(1)(2)(3)(10)(10)())
+console.log(curring(1)(2, 3, 4)(10, 10)())
+console.log(curring(1)(2, 3, 4)(10, 10)(1))
+
