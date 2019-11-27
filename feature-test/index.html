@@ -1,0 +1,349 @@
+<style>
+    .table-wrapper {
+        background-color: #fefbf1;
+        padding: 40px 10px;
+        border-radius: 1em;
+    }
+    .table-wrapper tbody {
+        background-color: #fff;
+    }
+    .table-wrapper th img {
+        max-width:70%;
+        border-radius: unset;
+    }
+    table th div {
+        height: 46px;
+    }
+    table th span {
+        min-height: 20px;
+        display: inline-block;
+        transform: rotate(-90deg);
+    }
+    th {
+        line-height: 1.4;
+        padding: 15px 0;
+    }
+    table {
+        border-collapse: separate;
+        border-spacing: 0;
+        font-size: 0.7em;
+        table-layout: fixed;
+        width: 100%;
+    }
+    table td {
+        padding: 5px 0;
+        font-size: 0.9em;
+        border-bottom: 2px solid #d9ae89;
+        border-right: 2px solid #d9ae89;
+        line-break: auto;
+    }
+    table tr {
+        text-align: center;
+        border: 2px solid #d9ae89;
+    }
+    tr:first-child td, tr:nth-child(17) td {
+        border-top: 2px solid #d9ae89;
+    }
+    tr td:first-child {
+        border-left: 2px solid #d9ae89;
+    }
+    tr:first-child td:first-child {
+        border-radius: 1em 0 0 0;
+        overflow: hidden;
+        border-left: 2px solid #d9ae89;
+        border-top: 2px solid #d9ae89;
+    }
+    tr:first-child td:last-child {
+        border-radius: 0 1em 0 0;
+        overflow: hidden;
+        border-right: 2px solid #d9ae89;
+        border-top: 2px solid #d9ae89;
+    }
+    tr:nth-child(14) td:first-child {
+        border-radius: 0 0 0 1em;
+        overflow: hidden;
+        border-left: 2px solid #d9ae89;
+        border-bottom: 2px solid #d9ae89;
+    }
+    tr:nth-child(14) td:last-child {
+        border-radius: 0 0 1em 0;
+        overflow: hidden;
+        border-right: 2px solid #d9ae89;
+        border-bottom: 2px solid #d9ae89;
+    }
+
+    tr:nth-child(17) {
+        display: none;
+    }
+
+    td:first-child {
+        text-align: left;
+    }
+    td:not(:first-child) {
+        max-width: 130px;
+        color: #489a94;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    .download-from td:not(:first-child) {
+        padding:5px;
+    }
+    td.no {
+        color: #844461;
+    }
+    table .bottom-table td {
+        border: none;
+        padding: 30px 0;
+        text-align: center;
+        background-color: #fefbf1;
+    }
+    .bottom-table__bg {
+        padding: 20px 4px;
+        background-color: #f9daac;
+        border-radius: 15px;
+        font-size: 1.2em;
+    }
+    .mobile-visible {
+        display: table;
+        table-layout: auto;
+    }
+    .mobile-visible  tr:last-child td:first-child {
+        border-radius: 0 0 0 1em;
+        overflow: hidden;
+        border-left: 2px solid #d9ae89;
+        border-bottom: 2px solid #d9ae89;
+    }
+    .mobile-visible tr:last-child td:last-child {
+        border-radius: 0 0 1em 0;
+        overflow: hidden;
+        border-right: 2px solid #d9ae89;
+        border-bottom: 2px solid #d9ae89;
+    }
+    tr:nth-child(14) td:last-child {
+        border-radius: 0 0 1em 0;
+        overflow: hidden;
+        border-right: 2px solid #d9ae89;
+        border-bottom: 2px solid #d9ae89;
+    }
+    @media (min-width: 768px) {
+        table {
+            font-size: inherit;
+        }
+        table th div {
+            height: 64px;
+        }
+        table th span {
+            transform: unset;
+            min-height: 50px;
+        }
+        table td {
+            padding: 10px;
+        }
+        table th div {
+            height: 110px;
+        }
+        .bottom-table__bg {
+            padding: 20px 40px;
+        }
+
+        tr:nth-child(17) {
+            display: table-row;
+        }
+
+        tr:nth-child(17) td{
+            text-transform: initial;
+            color: inherit;
+        }
+
+        tr:nth-child(17) td:not(:first-child) {
+            font-size: 0.7em;
+        }
+
+        tr:nth-child(17) td:first-child{
+            border-radius: 1em 0 0 1em;
+            border-left: 2px solid #d9ae89;
+            border-top: 2px solid #d9ae89;
+            border-bottom: 2px solid #d9ae89;
+        }
+        tr:nth-child(17) td:last-child{
+            border-radius: 0 1em 1em 0;
+            border-right: 2px solid #d9ae89;
+            border-top: 2px solid #d9ae89;
+            border-bottom: 2px solid #d9ae89;
+        }
+        .mobile-visible {
+            display: none;
+        }
+    }
+</style>
+<div class="table-wrapper">
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2"><div></div><span>Features</span></th>
+            <th><div><img src="https://cdn.setapp.com/blog/images/Pulltube2.png" data-image="Pulltube2.png" alt="Pulltube"></div><span>Pulltube</span></th>
+            <th><div><img src="https://cdn.setapp.com/blog/images/Downie.png" data-image="Downie.png" alt="Downie"></div><span>Downie</span></th>
+            <th><div><img src="https://cdn.setapp.com/blog/images/Folx.png" data-image="Folx.png" alt="Folx"></div><span>Folx</span></th>
+            <th><div><img src="https://cdn.setapp.com/blog/images/Elmedia%20Player.png" data-image="Elmedia%20Player.png" alt="Elmedia Player"></div><span>Elmedia Player</span></th>
+            <th><div><img src="https://cdn.setapp.com/blog/images/AnyTrans.png" data-image="AnyTrans.png" alt="AnyTrans"></div><span>AnyTrans</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="2"><div>One-click download</div></td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2"><div>Multi-threaded and batch downloads</div></td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2"><div>Video & audio downloading</div></td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2">Customize video quality / 4K and HD video support</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2">Convert video to audio and other formats</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2">Extract audio from video</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr class="download-from">
+            <td colspan="2">Download from YouTube, Vimeo, and any other websites</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2">3D and 360 degree video support</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2">Schedule downloads</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2">Customize speed</td>
+            <td class="no">no</td>
+            <td class="no">no</td>
+            <td>yes</td>
+            <td class="no">no</td>
+            <td class="no">no</td>
+        </tr>
+        <tr>
+            <td colspan="2">Browser extension</td>
+            <td class="no">no</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td class="no">no</td>
+            <td class="no">no</td>
+        </tr>
+        <tr>
+            <td colspan="2">Built-in search</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td colspan="2">Built-in video and audio editing </td>
+            <td>yes</td>
+            <td class="no">no</td>
+            <td class="no">no</td>
+            <td>yes</td>
+            <td class="no">no</td>
+        </tr>
+        <tr>
+            <td colspan="2">Save to external storage, cloud, and other devices</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr class="bottom-table">
+            <td rowspan="2" colspan="7"><span class="bottom-table__bg">Totally free with <a href="https://setapp.com/apps">Setapp subscription</a></span></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="4"><b>Price</b></td>
+            <td rowspan="4">$14.99 for <a href="https://mymixapps.com/pulltube-buy">Standart License</a></td>
+            <td rowspan="4">$19.99 if purchased separately $26.99 <a href="https://software.charliemonroe.net/downie/">Downie + Permute</a> converter</td>
+            <td rowspan="4">$19.95 <a href="https://mac.eltima.com/downloader.html">Folx Pro license</a></td>
+            <td rowspan="4">$19.95 <a href="https://mac.eltima.com/media-player-pro.html">Elmedia Player Pro license</a></td>
+            <td rowspan="4">$39.99 <a href="https://www.imobie.com/anytrans/iphone-manager.htm?ref=setapp">AnyTrans Single license</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="mobile-visible">
+        <thead>
+            <tr>
+                <th>App</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pulltube</td>
+                <td>$14.99 for <a href="https://mymixapps.com/pulltube-buy">Standart License</a></td>
+            </tr>
+            <tr>
+                <td>Downie</td>
+                <td>$19.99 if purchased separately $26.99 <a href="https://software.charliemonroe.net/downie/">Downie + Permute</a> converter</td>
+            </tr>
+            <tr>
+                <td>Folx</td>
+                <td>$19.95 <a href="https://mac.eltima.com/downloader.html">Folx Pro license</a></td>
+            </tr>
+            <tr>
+                <td>Elmedia Player</td>
+                <td>$19.95 <a href="https://mac.eltima.com/media-player-pro.html">Elmedia Player Pro license</a></td>
+            </tr>
+            <tr>
+                <td>AnyTrans</td>
+                <td>$39.99 <a href="https://www.imobie.com/anytrans/iphone-manager.htm?ref=setapp">AnyTrans Single license</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
