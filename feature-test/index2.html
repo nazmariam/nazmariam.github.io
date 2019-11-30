@@ -1,10 +1,37 @@
-<img src="https://cdn.setapp.com/blog/images/Folx.png" data-image="Folx.png">
+<section class="section">
+    <div class="container">
+        <div class="level">
+            <h1 class="title is-4 level-item has-text-centered">
+                Calculate Reading time
+            </h1>
+        </div>
+        <br>
+        <div class="level">
+            <p class="level-left level-item">Type or paste your text to calculate the reading time</p>
+        </div>
+        <div class="level">
+            <textarea class="textarea" onkeyup="calcRT(this)" placeholder="Add your text ..."></textarea>
+        </div>
+        <div class="level">
+            <div class="level-left">
+                <p>Reading time:&nbsp;</p>
+                <p class="has-text-info" id="readingTime">0 min read</p>
+            </div>
+        </div>
+    </div>
+</section>
 
+<script>
+    window.calcRT = ev => {
+        const wordsPerMinute = 200; // Average case.
+        let result;
 
-<img src="https://cdn.setapp.com/blog/images/Elmedia%20Player.png" data-image="Elmedia%20Player.png">
-
-<img src="https://cdn.setapp.com/blog/images/Downie.png" data-image="Downie.png">
-
-<img src="https://cdn.setapp.com/blog/images/AnyTrans.png" data-image="AnyTrans.png">
-
-<img src="https://cdn.setapp.com/blog/images/Pulltube2.png" data-image="Pulltube2.png">
+        let textLength = ev.value.split(" ").length; // Split by words
+        console.log(textLength);
+        if(textLength > 0){
+            let value = Math.ceil(textLength / wordsPerMinute);
+            result = `~${value} min read`;
+        }
+        document.getElementById("readingTime").innerText = result;
+    };
+</script>
