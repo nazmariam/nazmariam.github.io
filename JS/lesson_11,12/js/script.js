@@ -1,7 +1,0 @@
-
-  $(function() {
-
-
-  	
-    $('.carousel-hider').carousel();
-  });
